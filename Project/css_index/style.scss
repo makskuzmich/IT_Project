@@ -1,0 +1,364 @@
+// ГЛАВНАЯ
+body{
+   height: 100000px;
+}
+// color
+$maincolor: #0000DE;
+$navcolor: #6E9BB8;
+
+
+// mixin
+@mixin bluebutton ($width:174px, $height:48px ){
+   background: #0000DE;
+   border-radius: 20px 0px;
+   width:$width;
+   height: $height;
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   color: white;
+   border: none;
+}
+
+@mixin whitebutton ($width:174px, $height:48px ){
+   background: #FFFFFF;
+   border-radius: 20px 0px;
+   width: $width;
+   height:$height;
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   color: #0000DE;
+   border: none;
+
+}
+@mixin font($fweight:300, $fsize:20px){
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: $fweight;
+      font-size: $fsize;
+}
+a{
+  text-decoration: none;
+}
+.block{
+   width: 1920px;
+   height: 630px;
+   background: #F0F4F8;
+   position: relative;
+}
+
+.container{
+   width: 1368px;
+   position: absolute;
+   margin: 0 auto;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+
+// header
+.header{
+   height: 630px;
+}
+// nav
+.navi{
+   height: 53px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 400;
+   font-size: 12px;
+   .navi_section_a{
+      span>a{
+         color:$navcolor ;
+      }
+   }
+   .navi_section_b{
+      position: relative;
+      span::before{
+         content: url(../nav_img/Vector.png);
+         position: absolute;
+         left: -20px;
+      }
+      span>a{
+         color:$navcolor ;
+      }
+   }
+   .navi_section_c{
+      ul{
+         display: flex;
+         align-items: center;
+         li{
+            margin: 0px 12px;
+            position: relative;
+            #cont::after{
+               content: url(../nav_img/MapTrifold.png);
+               position: absolute;
+               left: 60px;
+               bottom: -5px;
+            }
+         }
+         span>a{
+            color:$navcolor ;
+         }
+      }
+      
+   }
+   .navi_section_d{
+      width: 24px;
+      height: 16px;
+      background-color: white;
+      text-align: center;
+      padding-top: 4px;
+      span{
+         color:$navcolor ;
+      }
+   }
+}
+
+hr{
+   background-color: #CBD8E9;
+   border: none;
+   height: 1px;
+}
+// menu
+.menu{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 30px 0px 50px;
+   font-family: 'Ubuntu', sans-serif;
+   
+   .menu_b{
+      ul{
+         display: flex;
+         align-items: center;
+         li{
+            margin: 0px 14.5px;
+           span{
+            font-weight: 400;
+            font-size: 18px;
+            color: $maincolor;
+           }
+         }
+      }
+   }
+   .menu_c>span{
+      position: relative;
+      a{
+         color: $maincolor;
+         font-weight: 700;
+         font-size: 16px;
+      }
+   }
+   .menu_c>span>a::before{
+      content: url(../menu_img/phone.png);
+      position: absolute;
+      top: 1px;
+      left: -20px;
+   }
+   .menu_c>span>a::after{
+      content: url(../menu_img/search.png);
+      position: absolute;
+      bottom: -5px;
+      left: 155px;
+   }
+   .menu_d{
+      .blue_button{
+         @include bluebutton;
+      }
+      .white_button{
+         @include whitebutton;
+      }
+      button{
+         margin-left: 15px;
+      }
+   }
+}
+// promo
+.promo{
+   position: relative;
+   h1{
+      margin: 105px 0px 23px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 700;
+      span{
+         color: $maincolor;
+      }
+   }
+   #ellipse{
+      position: absolute;
+      left: 850px;
+      top: -50px;
+   }
+   #number{
+      position: absolute;
+      left: 831px;
+      bottom: -80px;
+   }
+   #man{
+      position: absolute;
+      left: 811px;
+      bottom: -170px;
+   }
+   .slogan{
+      margin-bottom: 42px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+   }
+   .blue_button{
+      @include bluebutton(190px,68px );
+      margin-right: 20px;
+   }
+   .white_button{
+      @include whitebutton(159px,68px )
+   }
+   .dot{
+      width: 95px;
+      display: flex;
+      position: absolute;
+      left: 500px;
+      bottom: 30px;
+      div{
+         width: 10px;
+         height: 10px;
+         background: #C3D1E1;
+         border-radius: 50%;
+         margin: 0px 4px;
+      }
+   }
+   .dot>:nth-child(3){
+      background-color: #355DFB;;
+   }
+   .arrow{
+      display: flex;
+      position: absolute;
+      right: 0px;
+      top: 215px;
+      .arrow_left{
+         height: 40px;
+         width: 40px;
+         border-radius: 50%;
+         background: url(../back_img/left.png) no-repeat 50% 50%;
+         background-color: white;
+      }
+      .arrow_right{
+         height: 40px;
+         width: 40px;
+         border-radius: 50%;
+         background: url(../back_img/right.png) no-repeat 50% 50%;
+         background-color: white;
+      }
+   }
+}
+// Рекомендуемые продукты
+.recommendation{
+   h6{
+      margin: 98px 0px 30px;
+      @include font(300, 34px);
+   }
+   .top_div{
+      display: flex;
+      .wide{
+         
+         border-radius: 6px;
+         width: 825px;
+         padding: 32px 40px 38px;
+         margin-right: 15px;
+         background: url(../back_img/family.png) no-repeat right bottom;
+         background-color: #F0F4F8;;
+         .wide_left{
+            width: 354px;
+            .wide_left_text{
+               @include font (300, 16px);
+               color: #6E9BB8;
+               margin: 26px 0px 27px;
+            }
+            .head_text{
+               color: #79A6C3;
+               @include font(400, 14px);
+            }
+            h4{
+               @include font(700, 24px);
+               margin: 10px 0px 20px;
+            }
+            .wide_left_flex{
+               display: flex;
+                  div:first-of-type{
+                     padding-right: 40px;
+                  }
+                  .wide_text{
+                     @include font(400, 14px);
+                  }
+                  .wide_numbers{
+                     color: #355DFB;
+                     @include font(700, 36px)
+                  }
+                  span{
+                     display:block;
+                  }
+            }
+            .blue_button{
+               @include bluebutton(166px, 48px);
+               margin-right: 17px;
+            }
+            .white_button{
+               @include whitebutton(133px, 48px);
+            }
+         }
+      }
+      .narrow{
+         padding: 32px 40px 38px;
+         border-radius: 6px;
+         width: 405px;
+         background: url(../back_img/car.png) no-repeat 100% 20%;
+         background-color: #F0F4F8;
+          .wide_left{
+            width: 354px;
+            .wide_left_text{
+               @include font (300, 16px);
+               color: #6E9BB8;
+               margin: 26px 0px 27px;
+            }
+            .head_text{
+               color: #79A6C3;
+               @include font(400, 14px);
+            }
+            h4{
+               @include font(700, 24px);
+               margin: 10px 0px 20px;
+            }
+            .wide_left_flex{
+               display: flex;
+                  div:first-of-type{
+                     padding-right: 40px;
+                  }
+                  .wide_text{
+                     @include font(400, 14px);
+                  }
+                  .wide_numbers{
+                     color: #355DFB;
+                     @include font(700, 36px)
+                  }
+                  span{
+                     display:block;
+                  }
+            }
+            .blue_button{
+               @include bluebutton(166px, 48px);
+               margin-right: 17px;
+            }
+            .white_button{
+               @include whitebutton(133px, 48px);
+            }
+         }
+      }
+   }
+}

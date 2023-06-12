@@ -1,0 +1,381 @@
+body {
+  height: 100000px; }
+
+a {
+  text-decoration: none; }
+
+.block {
+  width: 1920px;
+  height: 630px;
+  background: #F0F4F8;
+  position: relative; }
+
+.container {
+  width: 1368px;
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.header {
+  height: 630px; }
+
+.navi {
+  height: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 12px; }
+  .navi .navi_section_a span > a {
+    color: #6E9BB8; }
+  .navi .navi_section_b {
+    position: relative; }
+    .navi .navi_section_b span::before {
+      content: url(../nav_img/Vector.png);
+      position: absolute;
+      left: -20px; }
+    .navi .navi_section_b span > a {
+      color: #6E9BB8; }
+  .navi .navi_section_c ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .navi .navi_section_c ul li {
+      margin: 0px 12px;
+      position: relative; }
+      .navi .navi_section_c ul li #cont::after {
+        content: url(../nav_img/MapTrifold.png);
+        position: absolute;
+        left: 60px;
+        bottom: -5px; }
+    .navi .navi_section_c ul span > a {
+      color: #6E9BB8; }
+  .navi .navi_section_d {
+    width: 24px;
+    height: 16px;
+    background-color: white;
+    text-align: center;
+    padding-top: 4px; }
+    .navi .navi_section_d span {
+      color: #6E9BB8; }
+
+hr {
+  background-color: #CBD8E9;
+  border: none;
+  height: 1px; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0px 50px;
+  font-family: 'Ubuntu', sans-serif; }
+  .menu .menu_b ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .menu .menu_b ul li {
+      margin: 0px 14.5px; }
+      .menu .menu_b ul li span {
+        font-weight: 400;
+        font-size: 18px;
+        color: #0000DE; }
+  .menu .menu_c > span {
+    position: relative; }
+    .menu .menu_c > span a {
+      color: #0000DE;
+      font-weight: 700;
+      font-size: 16px; }
+  .menu .menu_c > span > a::before {
+    content: url(../menu_img/phone.png);
+    position: absolute;
+    top: 1px;
+    left: -20px; }
+  .menu .menu_c > span > a::after {
+    content: url(../menu_img/search.png);
+    position: absolute;
+    bottom: -5px;
+    left: 155px; }
+  .menu .menu_d .blue_button {
+    background: #0000DE;
+    border-radius: 20px 0px;
+    width: 174px;
+    height: 48px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    border: none; }
+  .menu .menu_d .white_button {
+    background: #FFFFFF;
+    border-radius: 20px 0px;
+    width: 174px;
+    height: 48px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #0000DE;
+    border: none; }
+  .menu .menu_d button {
+    margin-left: 15px; }
+
+.promo {
+  position: relative; }
+  .promo h1 {
+    margin: 105px 0px 23px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700; }
+    .promo h1 span {
+      color: #0000DE; }
+  .promo #ellipse {
+    position: absolute;
+    left: 850px;
+    top: -50px; }
+  .promo #number {
+    position: absolute;
+    left: 831px;
+    bottom: -80px; }
+  .promo #man {
+    position: absolute;
+    left: 811px;
+    bottom: -170px; }
+  .promo .slogan {
+    margin-bottom: 42px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px; }
+  .promo .blue_button {
+    background: #0000DE;
+    border-radius: 20px 0px;
+    width: 190px;
+    height: 68px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    border: none;
+    margin-right: 20px; }
+  .promo .white_button {
+    background: #FFFFFF;
+    border-radius: 20px 0px;
+    width: 159px;
+    height: 68px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #0000DE;
+    border: none; }
+  .promo .dot {
+    width: 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 500px;
+    bottom: 30px; }
+    .promo .dot div {
+      width: 10px;
+      height: 10px;
+      background: #C3D1E1;
+      border-radius: 50%;
+      margin: 0px 4px; }
+  .promo .dot > :nth-child(3) {
+    background-color: #355DFB; }
+  .promo .arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 215px; }
+    .promo .arrow .arrow_left {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background: url(../back_img/left.png) no-repeat 50% 50%;
+      background-color: white; }
+    .promo .arrow .arrow_right {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background: url(../back_img/right.png) no-repeat 50% 50%;
+      background-color: white; }
+
+.recommendation h6 {
+  margin: 98px 0px 30px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 34px; }
+.recommendation .top_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .recommendation .top_div .wide {
+    border-radius: 6px;
+    width: 825px;
+    padding: 32px 40px 38px;
+    margin-right: 15px;
+    background: url(../back_img/family.png) no-repeat right bottom;
+    background-color: #F0F4F8; }
+    .recommendation .top_div .wide .wide_left {
+      width: 354px; }
+      .recommendation .top_div .wide .wide_left .wide_left_text {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        color: #6E9BB8;
+        margin: 26px 0px 27px; }
+      .recommendation .top_div .wide .wide_left .head_text {
+        color: #79A6C3;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px; }
+      .recommendation .top_div .wide .wide_left h4 {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        margin: 10px 0px 20px; }
+      .recommendation .top_div .wide .wide_left .wide_left_flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .recommendation .top_div .wide .wide_left .wide_left_flex div:first-of-type {
+          padding-right: 40px; }
+        .recommendation .top_div .wide .wide_left .wide_left_flex .wide_text {
+          font-family: 'Ubuntu';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px; }
+        .recommendation .top_div .wide .wide_left .wide_left_flex .wide_numbers {
+          color: #355DFB;
+          font-family: 'Ubuntu';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px; }
+        .recommendation .top_div .wide .wide_left .wide_left_flex span {
+          display: block; }
+      .recommendation .top_div .wide .wide_left .blue_button {
+        background: #0000DE;
+        border-radius: 20px 0px;
+        width: 166px;
+        height: 48px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: white;
+        border: none;
+        margin-right: 17px; }
+      .recommendation .top_div .wide .wide_left .white_button {
+        background: #FFFFFF;
+        border-radius: 20px 0px;
+        width: 133px;
+        height: 48px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: #0000DE;
+        border: none; }
+  .recommendation .top_div .narrow {
+    padding: 32px 40px 38px;
+    border-radius: 6px;
+    width: 405px;
+    background: url(../back_img/car.png) no-repeat 100% 20%;
+    background-color: #F0F4F8; }
+    .recommendation .top_div .narrow .wide_left {
+      width: 354px; }
+      .recommendation .top_div .narrow .wide_left .wide_left_text {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        color: #6E9BB8;
+        margin: 26px 0px 27px; }
+      .recommendation .top_div .narrow .wide_left .head_text {
+        color: #79A6C3;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px; }
+      .recommendation .top_div .narrow .wide_left h4 {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        margin: 10px 0px 20px; }
+      .recommendation .top_div .narrow .wide_left .wide_left_flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .recommendation .top_div .narrow .wide_left .wide_left_flex div:first-of-type {
+          padding-right: 40px; }
+        .recommendation .top_div .narrow .wide_left .wide_left_flex .wide_text {
+          font-family: 'Ubuntu';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px; }
+        .recommendation .top_div .narrow .wide_left .wide_left_flex .wide_numbers {
+          color: #355DFB;
+          font-family: 'Ubuntu';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px; }
+        .recommendation .top_div .narrow .wide_left .wide_left_flex span {
+          display: block; }
+      .recommendation .top_div .narrow .wide_left .blue_button {
+        background: #0000DE;
+        border-radius: 20px 0px;
+        width: 166px;
+        height: 48px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: white;
+        border: none;
+        margin-right: 17px; }
+      .recommendation .top_div .narrow .wide_left .white_button {
+        background: #FFFFFF;
+        border-radius: 20px 0px;
+        width: 133px;
+        height: 48px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        color: #0000DE;
+        border: none; }
+
+/*# sourceMappingURL=style.css.map */
