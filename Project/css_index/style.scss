@@ -5,7 +5,9 @@ body{
 // color
 $maincolor: #0000DE;
 $navcolor: #6E9BB8;
-
+*{
+   box-sizing: border-box;
+}
 
 // mixin
 @mixin bluebutton ($width:174px, $height:48px ){
@@ -40,6 +42,22 @@ $navcolor: #6E9BB8;
       font-weight: $fweight;
       font-size: $fsize;
 }
+@mixin label ($widthl:224px, $height:49px, $border:1px solid #C6D9E9, $opacity:0.5,$color: #6E9BB8){
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width: $widthl;
+   height: $height;
+   border: $border;
+   border-radius: 20px 0px;
+   text-align:center;
+   opacity:$opacity;
+   color: $color;
+   span{
+      margin-left: 10px;
+      @include font(500, 16px);
+   }
+}
 a{
   text-decoration: none;
 }
@@ -51,7 +69,7 @@ a{
 }
 
 .container{
-   width: 1368px;
+   width: 1245px;
    position: absolute;
    margin: 0 auto;
    top: 0;
@@ -165,7 +183,7 @@ hr{
       content: url(../menu_img/search.png);
       position: absolute;
       bottom: -5px;
-      left: 155px;
+      left: 130px;
    }
    .menu_d{
       .blue_button{
@@ -193,17 +211,17 @@ hr{
    }
    #ellipse{
       position: absolute;
-      left: 850px;
+      left: 715px;
       top: -50px;
    }
    #number{
       position: absolute;
-      left: 831px;
+      left: 696px;
       bottom: -80px;
    }
    #man{
       position: absolute;
-      left: 811px;
+      left: 676px;
       bottom: -170px;
    }
    .slogan{
@@ -260,14 +278,15 @@ hr{
 }
 // Рекомендуемые продукты
 .recommendation{
+   margin-bottom: 118px;
    h6{
       margin: 98px 0px 30px;
       @include font(300, 34px);
    }
    .top_div{
       display: flex;
+      margin-bottom: 15px;
       .wide{
-         
          border-radius: 6px;
          width: 825px;
          padding: 32px 40px 38px;
@@ -360,5 +379,572 @@ hr{
             }
          }
       }
+   }
+   .bottom_div{
+      display: flex;
+      .narrow{
+         padding: 32px 40px 38px;
+         border-radius: 6px;
+         width: 405px;
+         background: url(../back_img/stiralka.png) no-repeat 100% 20%;
+         background-color: #F0F4F8;
+         .wide_left{
+            width: 354px;
+            .wide_left_text{
+               @include font (300, 16px);
+               color: #6E9BB8;
+               margin: 26px 0px 27px;
+            }
+            .head_text{
+               color: #79A6C3;
+               @include font(400, 14px);
+            }
+            h4{
+               @include font(700, 24px);
+               margin: 10px 0px 20px;
+            }
+            .wide_left_flex{
+               display: flex;
+                  div:first-of-type{
+                     padding-right: 40px;
+                  }
+                  .wide_text{
+                     @include font(400, 14px);
+                  }
+                  .wide_numbers{
+                     color: #355DFB;
+                     @include font(700, 36px)
+                  }
+                  span{
+                     display:block;
+                  }
+            }
+            .blue_button{
+               @include bluebutton(166px, 48px);
+               margin-right: 17px;
+            }
+            .white_button{
+               @include whitebutton(133px, 48px);
+            }
+         }
+      }
+      .wide{
+         border-radius: 6px;
+         width: 825px;
+         padding: 32px 40px 38px;
+         margin-left: 15px;
+         background: url(../back_img/businessman.png) no-repeat 80% 80%;
+         background-color: #F0F4F8;;
+         .wide_left{
+            width: 354px;
+            .wide_left_text{
+               @include font (300, 16px);
+               color: #6E9BB8;
+               margin: 26px 0px 27px;
+            }
+            .head_text{
+               color: #79A6C3;
+               @include font(400, 14px);
+            }
+            h4{
+               @include font(700, 24px);
+               margin: 10px 0px 20px;
+            }
+            .wide_left_flex{
+               display: flex;
+                  div:first-of-type{
+                     padding-right: 40px;
+                  }
+                  .wide_text{
+                     @include font(400, 14px);
+                  }
+                  .wide_numbers{
+                     color: #355DFB;
+                     @include font(700, 36px)
+                  }
+                  span{
+                     display:block;
+                  }
+            }
+            .blue_button{
+               @include bluebutton(166px, 48px);
+               margin-right: 17px;
+            }
+            .white_button{
+               @include whitebutton(133px, 48px);
+            }
+         }
+      }
+   }
+}
+// Две синие кнопки
+.button_div{
+   display: flex;
+   justify-content: space-between;
+   @include font(300, 27px);
+   position: relative;
+   z-index: 2;
+   .button_left{
+      width: 615px;
+      height: 135px;
+      background: $maincolor;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      span::before{
+         content: url(../back_img/left_button.png);
+         position: absolute;
+         left: 100px;
+      }
+      span::after{
+         content: url(../back_img/left1.png);
+         position: absolute;
+         top: 40px;
+         left: 130px;
+      }
+   }
+   .button_right{
+      width: 615px;
+      height: 135px;
+      background: $maincolor;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      span::before{
+         content: url(../back_img/right_button.png);
+         position: absolute;
+         right: 450px;
+         top: 20px;
+      }
+   }
+}
+// Ваши возможности с НурФинанс
+main{
+   h6{
+      @include font(300, 34px);
+      margin: 793px 0px 33px;
+   }
+   .possibilities_items{
+      height: 400px;
+      display: flex;
+      justify-content: space-between;
+      .possibilities_item_a{
+         width: 358px;
+         ul{
+            padding-left: 70px;
+            li{
+               position: relative;
+               margin-bottom: 45px;
+               span{
+                  @include font(400,16px)
+               }
+            }
+            li:nth-child(1)::before{
+               content: url(../posibilities_img/Coin.png);
+               position: absolute;
+               top: -15px;
+               left: -75px;
+            }
+            li:nth-child(2)::before{
+               content: url(../posibilities_img/Wallet.png);
+               position: absolute;
+               top: -15px;
+               left: -75px;
+            }
+            li:nth-child(3)::before{
+               content: url(../posibilities_img/ChartBar.png);
+               position: absolute;
+               top: -15px;
+               left: -75px;
+            }
+            li:nth-child(4)::before{
+               content: url(../posibilities_img/ShieldChevron.png);
+               position: absolute;
+               top: -15px;
+               left: -75px;
+            }
+         }
+         button{
+            margin-top: 36px;
+            @include bluebutton(252px, 48px);
+         }
+      }
+      .possibilities_item_b{
+         width: 421px;
+         .possibilities_text{
+            @include font(300, 18px);
+            text-align:center;
+         }
+         .possibilities_container{
+            width: 423px;
+            height: 119px;
+            margin: 59px 0px 19px;
+            background: url(../posibilities_img/lineh.png) no-repeat;
+            display: flex;
+            justify-content: space-between;
+            .possibilities_container_a{
+               width: 95px;
+               display: flex;
+               justify-content: space-between;
+               .possibilities_container_item_a{
+                  background: url(../posibilities_img/leftitem.png) no-repeat bottom;
+                  height: 100%;
+                  padding-top: 45px;
+                  width: 95px;
+                  :nth-child(1){
+                     @include font(700, 20px);
+                     color: #7C83A1;
+                  }
+                  :nth-child(2){
+                     @include font(400, 14px);
+                     color: #7C83A1;
+                  }
+               }
+            }
+            .possibilities_container_b{
+               width: 95px;
+               background: url(../posibilities_img/centeritem.png) no-repeat bottom;
+               position: relative;
+               .possibilities_container_item_b{
+                  position: absolute;
+                  top: -30px;
+                  :nth-child(1){
+                     @include font(700, 20px);
+                     color: #355DFB;
+                  }
+                  :nth-child(2){
+                     @include font(400, 14px);
+                  }
+               }
+            }
+            .possibilities_container_c{
+               width: 95px;
+               background: url(../posibilities_img/rightitem.png) no-repeat bottom;
+               padding-top: 25px;
+               .possibilities_container_item_a{
+                  :nth-child(1){
+                     @include font(700, 20px);
+                     color: #7C83A1;
+                  }
+                  :nth-child(2){
+                     @include font(400, 14px);
+                     color: #7C83A1;
+                  }
+               }
+            }
+         }
+         .elements{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0px 37px;
+            @include font(400, 14px);
+            .element_b{
+               @include font(700, 14px);
+               color: #355DFB;
+            }
+         }
+         hr{
+            margin: 11px 0px;
+         }
+         .possibilities_text_a{
+            @include font(400,16px);
+            span{
+               font-weight: bold;
+            }
+         }
+         .possibilities_text_b{
+            color: #7C83A1;
+            @include font(400,16px);
+            position: relative;
+            margin: 10px 0px;
+            padding-left: 25px;
+            span::before{
+               content: url(../posibilities_img/CheckCircle.png);
+               position: absolute;
+               left: 0px;
+               bottom: -5px;
+            }
+         }
+         .line_bot{
+            background: url(../posibilities_img/fline.png) no-repeat;
+            margin-top: 16px;
+         }
+      }
+      .possibilities_item_c{
+         .possibilities_text{
+            @include font(300, 18px);
+            text-align:center;
+         }
+         .possibilities_container{
+            width: 423px;
+            height: 119px;
+            margin: 59px 0px 19px;
+            background: url(../posibilities_img/lineh.png) no-repeat 50% 50%,
+                        url(../posibilities_img/fkrivaya.png) no-repeat 50% 50%,
+                        url(../posibilities_img/krivaya.png) no-repeat 50% 50%;
+         }
+         .fond{
+            @include font(400, 14px);
+            div{
+               display: inline-block;
+               position: relative;
+            }
+            div:first-of-type{
+               margin: 0px 50px 0px 60px;
+               ::before{
+                  content: url(../posibilities_img/neblue.png);
+                  position: absolute;
+                  top: 8px;
+                  left: -25px;
+               }
+            }
+            div:last-of-type{
+               ::before{
+                  content: url(../posibilities_img/bluee.png);
+                  position: absolute;
+                  top: 8px;
+                  left: -25px;
+               }
+            }
+         }
+         hr{
+            margin-top: 68px;
+         }
+         .possibilities_text_a{
+            @include font(400,16px);
+            span{
+               font-weight: bold;
+            }
+         }
+         .possibilities_text_b{
+            color: #355DFB;
+            @include font(400,16px);
+            position: relative;
+            margin: 10px 0px;
+            padding-left: 25px;
+            span::before{
+               content: url(../posibilities_img/CheckCircle.png);
+               position: absolute;
+               left: 0px;
+               bottom: -5px;
+            }
+         }
+         .line_bot{
+            background: url(../posibilities_img/fline.png) no-repeat;
+            margin-top: 16px;
+         }
+      }
+   }
+}
+
+// Отзывы клиентов
+main{
+   #reviews{
+      margin: 112px 0px 93px;
+   }
+   .reviews_container{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
+      .reviews_a{
+         width: 405px;
+         height: 202px;
+         background: url(../back_img/play.png) no-repeat 76% 50%,
+                     url(../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../back_img/man1.png) no-repeat;
+         z-index: 4;
+         .name{
+            margin: 242px 0px 10px;
+            @include font(700, 18px)
+         }
+         .name_atribut{
+            color: #6E9BB8;
+            @include font(400, 16px)
+         }
+      }
+      .w{
+         background: url(../back_img/play.png) no-repeat 76% 50%,
+                     url(../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../back_img/women.png) no-repeat;
+      }
+      .m{
+         background: url(../back_img/play.png) no-repeat 76% 50%,
+                     url(../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../back_img/man2.png) no-repeat;
+      }
+   }
+   .reviews_button{
+      width: 405px;
+      margin: 125px auto;
+      text-align: center;
+      .review_b{
+         position: relative;
+         z-index: 3;
+         @include whitebutton(405px, 48px );
+         span{
+            @include font(500, 14px);
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Рассчитай свои накопления и доход
+.container_z{
+   width: 1368px; 
+   margin: 0 auto;
+   position: absolute;
+   top: 1650px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   .calc{
+      width: 1368px;
+      height: 750px;
+      background: #F0F4F8;
+      border-radius: 64px 6px;
+      padding: 169px 62px 110px;
+      h6{
+         @include font(300, 34px);
+      }
+      .calc_content{
+         display: flex;
+         justify-content: space-between;
+         .calc_content_a{
+            width: 460px;
+            height: 360px;
+            .calc_items{
+               display: flex;
+               justify-content: space-between;
+               margin-top: 31px;
+               margin-bottom: 20px;
+               .calc_left_text{
+                  @include font(300, 16px);
+               }
+               .calc_right_text{
+                  @include font(700, 16px);
+               }
+            }
+            .bg{
+               height: 6px;
+               width: 100%;
+               background: url(../calc_img/blue.png) no-repeat ,
+                           url(../calc_img/clean.png) no-repeat ;
+               position: relative;
+               margin-bottom: 34px;
+               img{
+                  position: absolute;
+                  left: 180px;
+                  top: -11px;
+               }       
+            }
+            .back{
+               background: url(../calc_img/blue2.png) no-repeat ,
+                           url(../calc_img/clean.png) no-repeat ;
+               img{
+                  left: 285px;
+               }
+            }
+           
+            form{
+               display: flex;
+               justify-content: space-between;
+               label{
+                  @include label;
+                  [type]{
+                     height: 20px;
+                     width: 20px;
+                  }
+               }
+               label:hover{
+                  background-color: white;
+                  cursor: pointer;
+                  z-index: 3;
+                  opacity: 1;
+                  transition: 0.4s;
+                  @include font(500, 16px);
+                  color: black;
+               }
+            }
+         }
+         .calc_content_b{
+            width: 388.23px;
+            height: 372px;
+            background: url(../calc_img/line.png) no-repeat;
+         }
+         .calc_content_c{
+            width: 309px;
+            height: 374px;
+            background: #FFFFFF;
+            border-radius: 10px 10px 120px 10px;   
+            padding: 30px 35px;
+            div{
+               margin: 21px 0px;
+            }
+            .wide_numbers{
+               color: #355DFB;
+               @include font(700, 36px)
+            }
+            .wide_text{
+               @include font(400, 14px);
+            }
+            button{
+               @include bluebutton(190px, 68px )
+            }
+         }
+      }
+   }
+   .bg_reviews{
+      width: 1368px;
+      height: 460px;
+      background: #F0F4F8;
+      border-radius: 120px 6px;
+      margin-top: 750px;
    }
 }
