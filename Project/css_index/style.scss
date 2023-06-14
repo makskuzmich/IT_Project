@@ -1,7 +1,4 @@
 // ГЛАВНАЯ
-body{
-   height: 100000px;
-}
 // color
 $maincolor: #0000DE;
 $navcolor: #6E9BB8;
@@ -58,6 +55,7 @@ $navcolor: #6E9BB8;
       @include font(500, 16px);
    }
 }
+
 a{
   text-decoration: none;
 }
@@ -792,6 +790,46 @@ main{
    }
 }
 
+// Полезная информация
+main{
+   #info{
+      margin: 141px 0px 31px;
+   }
+   .info_container{
+      display: flex;
+      justify-content: space-between;
+      section{
+         padding: 22.5px 21.5px 36px 30px;
+         width: 405px;
+         height: 360px;
+         background: #F0F4F8;
+         border-radius: 10px; 
+      }
+      .response{
+         h5{
+         @include font (700, 22px);
+         margin-bottom: 28px;
+         }
+         p{
+         margin-bottom: 33px;
+         @include font(500, 16px);
+         color: #0000DE;
+         background: url(../back_img/CaretRight.png) no-repeat;
+         background-position: -10px;
+         padding-left: 30px;
+        }
+        #response_header{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         span{
+            @include font(400,14px );
+            color: #79A6C3;
+         }
+        }
+      }
+   }
+}
 
 
 
@@ -835,6 +873,7 @@ main{
 
 
 
+// Широкий контейнер
 // Рассчитай свои накопления и доход
 .container_z{
    width: 1368px; 
@@ -946,5 +985,105 @@ main{
       background: #F0F4F8;
       border-radius: 120px 6px;
       margin-top: 750px;
+   }
+}
+
+// footer
+footer{
+   height: 669px;
+   background: #F0F4F8;
+   margin-top: 3630px;
+   .footer_container{
+      width: 1245px;
+      margin: 0 auto;
+      height: 100%;
+      .logo_form{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom:71px;
+         padding-top: 87px;
+         input{
+            height: 48px;
+            width: 891px;
+            padding-left: 57px;
+            background: url(../back_img/MagnifyingGlass.png) no-repeat 1% 50%;
+            background-color: white;
+            border-radius: 6px;
+            border: none;
+         }
+      }
+      .footer_menu{
+         display: flex;
+         justify-content: space-between;
+         .contacts{
+            .number{
+               @include font(700, 37px);
+               color: $maincolor;
+               a:visited{
+                  color: $maincolor;
+                 }
+            }
+            .email{
+               @include font(400, 12px);
+               color: #6E9BB8;
+               margin: 8px 0px 45px;
+            }
+            .addres{
+               @include font(400, 18px);
+               color: $maincolor;
+            }
+            .icons{
+               font-size: 40px;
+               color: #3387be;
+              a{
+               i{
+                  margin: 0px 3px;
+               }
+              }
+              a{
+               i:hover{
+                  transform: scale(1.4);
+               }
+              }
+              a:visited{
+               color: #3387be;
+              }
+            }
+         }
+         .box{
+            h3{
+               @include font(400, 20px);
+               color: $maincolor;
+               margin-bottom: 14px;
+            }
+            ul{
+               margin-top: 55px;
+               li{
+                  @include font(400, 14px);
+                  margin-top: 20px;
+                  a:visited{
+                     color:black;
+                  }
+               }
+            }
+         }
+      }
+      .h{
+         margin: 62px 0px 11px;
+         @include font(700, 12px);
+         color: #6E9BB8;
+      }
+      .h_text{
+         @include font(400, 12px);
+         color: #6E9BB8;
+      }
+      .h_info{
+         margin: 60px 0px 16px;
+         @include font(400, 12px);
+         color: #6E9BB8;
+         span{
+            margin-right: 21px;
+         }
+      }
    }
 }
