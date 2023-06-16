@@ -1,0 +1,116 @@
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { height: 10000px; }
+
+a { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+button:hover { cursor: pointer; }
+
+.block { width: 1920px; height: 630px; background: #F0F4F8; position: relative; }
+
+.container { width: 1245px; position: absolute; margin: 0 auto; top: 0; left: 0; right: 0; }
+
+.header { height: 630px; }
+
+.navi { height: 53px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-family: 'Ubuntu', sans-serif; font-weight: 400; font-size: 12px; }
+.navi .navi_section_a span > a { color: #6E9BB8; }
+.navi .navi_section_b { position: relative; }
+.navi .navi_section_b span::before { content: url(../../nav_img/Vector.png); position: absolute; left: -20px; }
+.navi .navi_section_b span > a { color: #6E9BB8; }
+.navi .navi_section_c ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.navi .navi_section_c ul li { margin: 0px 12px; position: relative; }
+.navi .navi_section_c ul li #cont::after { content: url(../../nav_img/MapTrifold.png); position: absolute; left: 60px; bottom: -5px; }
+.navi .navi_section_c ul span > a { color: #6E9BB8; }
+.navi .navi_section_d { width: 24px; height: 16px; background-color: white; text-align: center; padding-top: 4px; }
+.navi .navi_section_d span { color: #6E9BB8; }
+
+hr { background-color: #CBD8E9; border: none; height: 1px; }
+
+.menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 30px 0px 50px; font-family: 'Ubuntu', sans-serif; }
+.menu .menu_b ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.menu .menu_b ul li { margin: 0px 14.5px; }
+.menu .menu_b ul li span { font-weight: 400; font-size: 18px; color: #0000DE; }
+.menu .menu_c > span { position: relative; }
+.menu .menu_c > span a { color: #0000DE; font-weight: 700; font-size: 16px; }
+.menu .menu_c > span > a::before { content: url(../../menu_img/phone.png); position: absolute; top: 1px; left: -20px; }
+.menu .menu_c > span > a::after { content: url(../../menu_img/search.png); position: absolute; bottom: -5px; left: 130px; }
+.menu .menu_d .blue_button { background: #0000DE; border-radius: 20px 0px; width: 174px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; }
+.menu .menu_d .white_button { background: #FFFFFF; border-radius: 20px 0px; width: 174px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
+.menu .menu_d button { margin-left: 15px; }
+
+.promo { position: relative; }
+.promo h1 { margin: 105px 0px 23px; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; }
+.promo h1 span { color: #0000DE; }
+.promo #lt { position: absolute; left: 590px; top: 27px; }
+.promo #rb { position: absolute; left: 900px; bottom: -125px; }
+.promo #rt { position: absolute; left: 889px; bottom: 6px; }
+.promo #lb { position: absolute; left: 588px; bottom: -140px; }
+.promo #man { position: absolute; left: 676px; bottom: -170px; }
+.promo .slogan { margin-bottom: 42px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 18px; }
+.promo .blue_button { background: #0000DE; border-radius: 20px 0px; width: 190px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; margin-right: 20px; }
+.promo .white_button { background: #FFFFFF; border-radius: 20px 0px; width: 159px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
+.promo .dot { width: 95px; display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; left: 500px; bottom: 30px; }
+.promo .dot div { width: 10px; height: 10px; background: #C3D1E1; border-radius: 50%; margin: 0px 4px; }
+.promo .dot > :nth-child(3) { background-color: #355DFB; }
+.promo .arrow { display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; right: 0px; top: 215px; }
+.promo .arrow .arrow_left { height: 40px; width: 40px; border-radius: 50%; background: url(../../back_img/left.png) no-repeat 50% 50%; background-color: white; }
+.promo .arrow .arrow_right { height: 40px; width: 40px; border-radius: 50%; background: url(../../back_img/right.png) no-repeat 50% 50%; background-color: white; }
+
+.possibilities_item_a { margin: 135px 0px 123px; }
+.possibilities_item_a ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.possibilities_item_a ul li { position: relative; }
+.possibilities_item_a ul li span { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 16px; }
+.possibilities_item_a ul li:first-of-type { margin-left: 70px; }
+.possibilities_item_a ul li:nth-child(1)::before { content: url(../../posibilities_img/Coin.png); position: absolute; top: -15px; left: -75px; }
+.possibilities_item_a ul li:nth-child(2)::before { content: url(../../posibilities_img/Wallet.png); position: absolute; top: -15px; left: -75px; }
+.possibilities_item_a ul li:nth-child(3)::before { content: url(../../posibilities_img/ChartBar.png); position: absolute; top: -15px; left: -75px; }
+.possibilities_item_a ul li:nth-child(4)::before { content: url(../../posibilities_img/ShieldChevron.png); position: absolute; top: -15px; left: -75px; }
+
+main .razum { height: 426px; width: 100%; margin-top: 970px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+main .razum .left_razum { height: 100%; width: 100%; background: url(../back_gif/back.gif) no-repeat 15% 88%; position: relative; }
+main .razum .left_razum img { position: absolute; left: -185px; }
+main .razum .left_razum .blue_button { background: #0000DE; border-radius: 20px 0px; width: 318px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; position: absolute; left: 165px; top: 358px; }
+main .razum .right_razum { width: 100%; }
+main .razum .right_razum h5 { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; }
+main .razum .right_razum #text_a { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 20px; color: #6489A0; margin: 34px 0px 24px; }
+main .razum .right_razum h6 { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 24px; margin-bottom: 34px; position: relative; }
+main .razum .right_razum h6:first-of-type::before { content: url("../back_gif/NumberCircleOne.png"); position: absolute; left: -65px; top: -13px; }
+main .razum .right_razum h6:last-of-type::before { content: url("../back_gif/NumberCircleTwo.png"); position: absolute; left: -65px; top: -13px; }
+main .razum .right_razum #text_b { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 20px; color: #6489A0; line-height: 140%; }
+
+main .invest { margin-top: 100px; }
+main .invest .invest_top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+main .invest .invest_top h3 { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 44px; margin-bottom: 36px; line-height: 110%; }
+main .invest .invest_top p { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 20px; color: #6E9BB8; line-height: 140%; }
+main .invest .invest_top #invest_text { font-size: 16px; line-height: 150%; }
+main .invest .invest_bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+main .invest .invest_bottom section { width: 405px; height: 565px; background-color: #F0F4F8; border-radius: 6px; margin-top: 158px; position: relative; }
+
+.container_z { width: 1368px; margin: 0 auto; position: absolute; top: 922px; bottom: 0; left: 0; right: 0; }
+.container_z .calc { width: 1368px; height: 750px; background: #F0F4F8; border-radius: 64px 6px; padding: 169px 62px 110px; }
+.container_z .calc h6 { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; }
+.container_z .calc .calc_content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.container_z .calc .calc_content .calc_content_a { width: 460px; height: 360px; }
+.container_z .calc .calc_content .calc_content_a .calc_items { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 31px; margin-bottom: 20px; }
+.container_z .calc .calc_content .calc_content_a .calc_items .calc_left_text { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 16px; }
+.container_z .calc .calc_content .calc_content_a .calc_items .calc_right_text { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 16px; }
+.container_z .calc .calc_content .calc_content_a .bg { height: 6px; width: 100%; background: url(../../calc_img/blue.png) no-repeat, url(../../calc_img/clean.png) no-repeat; position: relative; margin-bottom: 34px; }
+.container_z .calc .calc_content .calc_content_a .bg img { position: absolute; left: 180px; top: -11px; }
+.container_z .calc .calc_content .calc_content_a .back { background: url(../../calc_img/blue2.png) no-repeat, url(../../calc_img/clean.png) no-repeat; }
+.container_z .calc .calc_content .calc_content_a .back img { left: 285px; }
+.container_z .calc .calc_content .calc_content_a form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.container_z .calc .calc_content .calc_content_a form label { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 224px; height: 49px; border: 1px solid #C6D9E9; border-radius: 20px 0px; text-align: center; opacity: 0.5; color: #6E9BB8; }
+.container_z .calc .calc_content .calc_content_a form label span { margin-left: 10px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 16px; }
+.container_z .calc .calc_content .calc_content_a form label [type] { height: 20px; width: 20px; }
+.container_z .calc .calc_content .calc_content_a form label:hover { background-color: white; cursor: pointer; z-index: 3; opacity: 1; -webkit-transition: 0.4s; transition: 0.4s; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 16px; color: black; }
+.container_z .calc .calc_content .calc_content_b { width: 388.23px; height: 372px; background: url(../../calc_img/line.png) no-repeat; }
+.container_z .calc .calc_content .calc_content_c { width: 309px; height: 374px; background: #FFFFFF; border-radius: 10px 10px 120px 10px; padding: 30px 35px; }
+.container_z .calc .calc_content .calc_content_c div { margin: 21px 0px; }
+.container_z .calc .calc_content .calc_content_c .wide_numbers { color: #355DFB; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 36px; }
+.container_z .calc .calc_content .calc_content_c .wide_text { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 14px; }
+.container_z .calc .calc_content .calc_content_c button { background: #0000DE; border-radius: 20px 0px; width: 190px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; }
+.container_z .bg_reviews { width: 1368px; height: 460px; background: #F0F4F8; border-radius: 120px 6px; }
+
+/*# sourceMappingURL=style.css.map */

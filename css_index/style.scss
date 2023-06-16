@@ -18,6 +18,7 @@ $navcolor: #6E9BB8;
    font-size: 14px;
    color: white;
    border: none;
+  
 }
 
 @mixin whitebutton ($width:174px, $height:48px ){
@@ -58,6 +59,10 @@ $navcolor: #6E9BB8;
 
 a{
   text-decoration: none;
+}
+a:visited{text-decoration: none;}
+button:hover{
+   cursor: pointer;
 }
 .block{
    width: 1920px;
@@ -798,6 +803,9 @@ main{
    .info_container{
       display: flex;
       justify-content: space-between;
+      a:visited{
+         color: $maincolor;
+      }
       section{
          padding: 22.5px 21.5px 36px 30px;
          width: 405px;
@@ -1083,6 +1091,9 @@ footer{
          color: #6E9BB8;
          span{
             margin-right: 21px;
+         }
+         a:visited{
+            color: $navcolor;
          }
       }
    }
