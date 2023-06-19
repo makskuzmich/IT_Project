@@ -428,22 +428,124 @@ main{
             border-radius: 6px;
             margin-top: 158px;
             position: relative;
+            padding: 40px 10px 0px 40px;
+            #backimg{
+               position: absolute;
+               top: 40px;
+               left: 0px;
+            }
+            .invest_header{
+               margin: 236px 0px 10px;
+               @include font(400, 14px);
+               color: #79A6C3;
+            }
+            h5{
+               @include font(700, 24px);
+            }
+            .invest_conditions{
+               display: flex;
+               justify-content: space-between;
+               margin: 20px 0px 25px;
+               .bluespan{
+                  @include font(700, 36px);
+                  color: #355DFB;
+                  margin-bottom: 5px;
+               }
+               div{
+                  :last-of-type{
+                     @include font(400, 14px);
+                  }
+               }
+               :nth-child(2){
+                  padding-right: 65px;
+               }
+            }
+            .invest_text{
+               @include font(300, 16px);
+               color: $navcolor;
+               line-height: 140%;
+               margin-bottom: 27px;
+            }
+            .blue_button{
+               @include bluebutton(166px, 48px);
+               margin-right: 17px;
+            }
+            .white_button{
+               @include whitebutton(133px, 48px);
+            }
          }
          :first-of-type{
-            
+            #man{
+               position: absolute;
+               left: 50px;
+               top: -100px;
+            }
          }
          :nth-of-type(2){
-            
+            #businessman{
+               position: absolute;
+               left: 50px;
+               top: -100px;
+            }
          }
          :last-of-type{
-            
+            #family{
+               position: absolute;
+               left: 0px;
+               top: -100px;
+            }
          }
         
       }
    }
 }
 
+// Консультация
+main{
+   .consultation_div{
+      position: relative;
+      z-index: 2;
+      margin-top: 240px;
+      h3{
+         @include font(300, 34px);
+         span{
+            color: $maincolor;
+            font-weight: 700;
+         }
+      }
+      p{
+         @include font(300, 16px);
+         line-height: 140%;
+         color: #6E9BB8;
+         margin: 17px 0px 33px;
+      }
+      .blue_button{
+         @include bluebutton(250px, 68px);
+         margin-right: 16px;
+      }
+      .white_button{
+         @include whitebutton(153px, 68px);
+      }
+   }
+}
 
+// Схема работы
+main{
+   .shema{
+      margin-top: 133px;
+      h6{
+         @include font(300, 34px);
+      }
+      .shema_span{
+         @include font(700, 25px);
+         line-height:140%;
+         color: $maincolor;
+      }
+      .mrspan{
+         margin-right: 480px;
+      }
+   }
+}
 
 
 
@@ -558,10 +660,22 @@ main{
          }
       }
    }
-   .bg_reviews{
-      width: 1368px;
-      height: 460px;
+   .consultation{
+      height: 354px;
       background: #F0F4F8;
-      border-radius: 120px 6px;
+      border-radius: 64px 6px;
+      margin-top: 1840px;
+      
+      div{
+         background: url(../back_gif/whiteback.gif) no-repeat 85%;
+         position: relative;
+         height: 100%;
+         z-index: 1;
+         img{
+            position: absolute;
+            left: 835px;
+            bottom: 0px;
+         }
+      }
    }
 }
