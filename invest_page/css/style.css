@@ -1,7 +1,5 @@
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { height: 10000px; }
-
 a { text-decoration: none; }
 
 a:visited { text-decoration: none; }
@@ -109,9 +107,23 @@ main .consultation_div .blue_button { background: #0000DE; border-radius: 20px 0
 main .consultation_div .white_button { background: #FFFFFF; border-radius: 20px 0px; width: 153px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
 
 main .shema { margin-top: 133px; }
-main .shema h6 { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; }
+main .shema h6 { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; margin-bottom: 36px; }
 main .shema .shema_span { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 25px; line-height: 140%; color: #0000DE; }
 main .shema .mrspan { margin-right: 480px; }
+main .shema #right_top { position: absolute; left: 410px; bottom: 300px; }
+main .shema #left_top { position: absolute; left: 730px; bottom: 300px; }
+main .shema #left_bottom { position: absolute; left: 410px; bottom: 135px; }
+main .shema #right_bottom { position: absolute; left: 730px; bottom: 135px; }
+main .shema .shema_div { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; margin-top: 40px; padding: 28px 0px; height: 174px; background: url(../img_web/vec.webp) no-repeat; position: relative; }
+main .shema .shema_div #title { position: absolute; top: -100px; }
+main .shema .shema_div #titleshadow { position: absolute; top: -125px; }
+main .shema .shema_div .bold { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 22px; margin-bottom: 11px; display: inline-block; }
+main .shema .shema_div .nosh { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 22px; }
+main .shema .shema_bottom { width: 1001px; height: 100px; margin: 5px auto 0px; text-align: center; padding-top: 15px; background: url(../img_web/bottomback.png) no-repeat; }
+main .shema .shema_bottom p { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; color: #92A7B9; margin-bottom: 10px; }
+main .shema .shema_bottom span { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 22px; line-height: 140%; }
+main .shema .shema_bottom span::before { content: url(../img_web/strelka.png); padding-right: 20px; }
+main .shema .shema_bottom span::after { content: url(../img_web/strelka.png); padding-left: 20px; }
 
 .container_z { width: 1368px; margin: 0 auto; position: absolute; top: 922px; bottom: 0; left: 0; right: 0; }
 .container_z .calc { width: 1368px; height: 750px; background: #F0F4F8; border-radius: 64px 6px; padding: 169px 62px 110px; }
@@ -139,5 +151,42 @@ main .shema .mrspan { margin-right: 480px; }
 .container_z .consultation { height: 354px; background: #F0F4F8; border-radius: 64px 6px; margin-top: 1840px; }
 .container_z .consultation div { background: url(../back_gif/whiteback.gif) no-repeat 85%; position: relative; height: 100%; z-index: 1; }
 .container_z .consultation div img { position: absolute; left: 835px; bottom: 0px; }
+.container_z .shema_work { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-top: 221px; }
+.container_z .online { width: 1368px; height: 664px; background: #FFFFFF; -webkit-box-shadow: 6px 6px 70px rgba(0, 0, 0, 0.09); box-shadow: 6px 6px 70px rgba(0, 0, 0, 0.09); border-radius: 64px 6px; margin-top: 245px; background: url(../img_web/manonline.webp) no-repeat right bottom; }
+.container_z .online .online_container { width: 1245px; margin: 0 auto; height: 100%; }
+.container_z .online .online_container h6 { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; padding: 87px 0px 49px; }
+.container_z .online .online_container .grand_div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: left; -ms-flex-pack: left; justify-content: left; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.container_z .online .online_container .grand_div .grand_item { width: 300px; height: 311px; margin-right: 15px; }
+.container_z .online .online_container .grand_div .grand_item .grand-header { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 22px; color: #0000DE; }
+.container_z .online .online_container .grand_div .grand_item input { width: 300px; height: 68px; border: 1px solid #DCEAF7; border-radius: 10px; margin-top: 30px; }
+.container_z .online .online_container .grand_div .first_grand form :nth-child(1) { margin-top: 15px; }
+.container_z .online .online_container .grand_div .three_grand form :nth-child(1) { margin-top: 15px; }
+.container_z .online .online_container .grand_div .second_grand form { padding-top: 17px; }
+.container_z .online .online_container .blue_button { background: #0000DE; border-radius: 20px 0px; width: 224px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 16px; margin: 56px 30px 0 0; }
+.container_z .online .online_container div { display: inline-block; }
+.container_z .online .online_container div span { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #9AB5C6; line-height: 150%; }
+
+footer { height: 669px; background: #F0F4F8; margin-top: 4645px; }
+footer .footer_container { width: 1245px; margin: 0 auto; height: 100%; }
+footer .footer_container .logo_form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 71px; padding-top: 87px; }
+footer .footer_container .logo_form input { height: 48px; width: 891px; padding-left: 57px; background: url(../../back_img/MagnifyingGlass.png) no-repeat 1% 50%; background-color: white; border-radius: 6px; border: none; }
+footer .footer_container .footer_menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+footer .footer_container .footer_menu .contacts .number { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 37px; color: #0000DE; }
+footer .footer_container .footer_menu .contacts .number a:visited { color: #0000DE; }
+footer .footer_container .footer_menu .contacts .email { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #6E9BB8; margin: 8px 0px 45px; }
+footer .footer_container .footer_menu .contacts .addres { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 18px; color: #0000DE; }
+footer .footer_container .footer_menu .contacts .icons { font-size: 40px; color: #3387be; }
+footer .footer_container .footer_menu .contacts .icons a i { margin: 0px 3px; }
+footer .footer_container .footer_menu .contacts .icons a i:hover { -webkit-transform: scale(1.4); transform: scale(1.4); }
+footer .footer_container .footer_menu .contacts .icons a:visited { color: #3387be; }
+footer .footer_container .footer_menu .box h3 { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 20px; color: #0000DE; margin-bottom: 14px; }
+footer .footer_container .footer_menu .box ul { margin-top: 55px; }
+footer .footer_container .footer_menu .box ul li { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 14px; margin-top: 20px; }
+footer .footer_container .footer_menu .box ul li a:visited { color: black; }
+footer .footer_container .h { margin: 62px 0px 11px; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 12px; color: #6E9BB8; }
+footer .footer_container .h_text { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #6E9BB8; }
+footer .footer_container .h_info { margin: 60px 0px 16px; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #6E9BB8; }
+footer .footer_container .h_info span { margin-right: 21px; }
+footer .footer_container .h_info a:visited { color: #6E9BB8; }
 
 /*# sourceMappingURL=style.css.map */
