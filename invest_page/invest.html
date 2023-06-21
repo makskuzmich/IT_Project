@@ -117,7 +117,7 @@
       <div class="razum">
          <section class="left_razum">
             <img src="img_web/manback.webp" alt="businessman">
-            <a href=""><button class="blue_button"><span>Видео о работе компании</span></button></a>
+            <a href="https://www.youtube.com/watch?v=sN2sGpQ6kHU"><button class="blue_button"><span>Видео о работе компании</span></button></a>
          </section>
          <section class="right_razum">
             <h5>Разумные инвестиции</h5>
@@ -349,32 +349,35 @@
          <img src="img_web/leftman.webp" alt="man">
          <img src="img_web/rightwomen.webp" alt="women">
       </section>
-
+      <!-- Онлайн заявка -->
       <section class="online">
          <div class="online_container">
             <h6>Онлайн заявка вкладчика</h6>
             <div class="grand_div">
                <div class="grand_item first_grand">
                   <span class="grand-header">Контактные данные</span>
-                  <form action="">
-                     <input type="text">
-                     <input type="text">
-                     <input type="text">
+                  <form action="" method="get">
+                     <input type="text" placeholder="ФИО">
+                     <input type="text" placeholder="E-mail">
+                     <select name="Country">
+                        <option value="Belarus">Belarus</option>
+                        <option value="Russia">Russia</option>
+                     </select>
                   </form>
                </div>
                <div class="grand_item second_grand">
-                  <form action="" >
-                     <input type="text">
-                     <input type="text">
-                     <input type="text">
+                  <form action="" method="get">
+                     <input type="text" value="+375 (29)" maxlength="16">
+                     <input type="text" placeholder="Дата рождения">
+                     <input type="text" placeholder="Город проживания">
                   </form>
                </div>
                <div class="grand_item three_grand">
                   <span class="grand-header">Параметры вклада</span>
-                  <form action="">
-                     <input type="text">
-                     <input type="text">
-                     <input type="text">
+                  <form action="" method="get">
+                     <input type="text" placeholder="Сумма вклада">
+                     <input type="text" placeholder="Срок инвестирования">
+                     <input type="text" placeholder="Пополнение вклада">
                   </form>
                </div>
             </div>
@@ -471,5 +474,7 @@
          <p class="h_info"><span>© 2021 АО «НурФинанс»</span><a href="">Политика конфиденциальности</a><span></span></p>
       </div>
    </footer>
+
+  
 </body>
 </html>

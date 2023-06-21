@@ -751,6 +751,7 @@ main{
       justify-content: space-between;
       margin-top: 221px;
    }
+   // Онлайн заявка
    .online{
       width: 1368px;
       height: 664px;
@@ -786,6 +787,15 @@ main{
                   border-radius: 10px;
                   margin-top: 30px;
                }
+               select{
+                   width: 300px;
+                  height: 68px;
+                  border: 1px solid #DCEAF7;
+                  border-radius: 10px;
+                  margin-top: 30px;
+                  @include font(300, 20px);
+                  padding: 10px;
+               }
             }
             .first_grand{
                form{
@@ -804,6 +814,12 @@ main{
             .second_grand{
                form{
                   padding-top: 17px;
+               }
+            }
+            form{
+               input{
+                  padding: 10px;
+                  @include font(300, 20px);
                }
             }
          }

@@ -159,9 +159,11 @@ main .shema .shema_bottom span::after { content: url(../img_web/strelka.png); pa
 .container_z .online .online_container .grand_div .grand_item { width: 300px; height: 311px; margin-right: 15px; }
 .container_z .online .online_container .grand_div .grand_item .grand-header { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 22px; color: #0000DE; }
 .container_z .online .online_container .grand_div .grand_item input { width: 300px; height: 68px; border: 1px solid #DCEAF7; border-radius: 10px; margin-top: 30px; }
+.container_z .online .online_container .grand_div .grand_item select { width: 300px; height: 68px; border: 1px solid #DCEAF7; border-radius: 10px; margin-top: 30px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 20px; padding: 10px; }
 .container_z .online .online_container .grand_div .first_grand form :nth-child(1) { margin-top: 15px; }
 .container_z .online .online_container .grand_div .three_grand form :nth-child(1) { margin-top: 15px; }
 .container_z .online .online_container .grand_div .second_grand form { padding-top: 17px; }
+.container_z .online .online_container .grand_div form input { padding: 10px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 20px; }
 .container_z .online .online_container .blue_button { background: #0000DE; border-radius: 20px 0px; width: 224px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 16px; margin: 56px 30px 0 0; }
 .container_z .online .online_container div { display: inline-block; }
 .container_z .online .online_container div span { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #9AB5C6; line-height: 150%; }
