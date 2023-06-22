@@ -1,0 +1,961 @@
+// color
+$maincolor: #0000DE;
+$navcolor: #6E9BB8;
+*{
+   box-sizing: border-box;
+}
+// mixin
+@mixin bluebutton ($width:174px, $height:48px ){
+   background: #0000DE;
+   border-radius: 20px 0px;
+   width:$width;
+   height: $height;
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   color: white;
+   border: none;
+  
+}
+
+@mixin whitebutton ($width:174px, $height:48px ){
+   background: #FFFFFF;
+   border-radius: 20px 0px;
+   width: $width;
+   height:$height;
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   color: #0000DE;
+   border: none;
+
+}
+@mixin font($fweight:300, $fsize:20px){
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: $fweight;
+      font-size: $fsize;
+}
+@mixin label ($widthl:224px, $height:49px, $border:1px solid #C6D9E9, $opacity:0.5,$color: #6E9BB8){
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width: $widthl;
+   height: $height;
+   border: $border;
+   border-radius: 20px 0px;
+   text-align:center;
+   opacity:$opacity;
+   color: $color;
+   span{
+      margin-left: 10px;
+      @include font(500, 16px);
+   }
+}
+@keyframes fix{
+   from{background: #5f5fa3; color: rgb(7, 201, 250);}
+   50%{background: #be1cdf; columns: rgb(243, 173, 43);}
+   80%{background: #0000DE; color: #8484ac;}
+   to{background: #8f8fdd; color: #1414e6;}
+}
+
+a{
+  text-decoration: none;
+}
+a:visited{text-decoration: none;}
+button:hover{
+   cursor: pointer;
+}
+.block{
+   width: 1920px;
+   height: 630px;
+   background: #F0F4F8;
+   position: relative;
+}
+
+.fixed{
+   position: fixed;
+   bottom: 10px;
+   left: 10px;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background-color: #0000DE;
+   animation: fix 4s infinite;
+   span{
+      position: relative;
+      top: 30px;
+      left: 10px;
+      @include font(300, 14px);
+      color: #FFFFFF;
+   }
+}
+.container{
+   width: 1245px;
+   position: absolute;
+   margin: 0 auto;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+
+// header
+.header{
+   height: 630px;
+   p{
+      a{
+         @include font(400, 12px);
+         color: #8FB1C7;
+         text-decoration-line: underline;
+         margin-right: 10px;
+         
+      }
+      a:nth-child(1)::after{
+         content: url(../../online_page/img/strelka.png);
+         padding-left: 10px;
+      }
+      a:nth-child(2)::after{
+         content: url(../../online_page/img/strelka.png);
+         padding-left: 10px;
+      }
+   }
+}
+// nav
+.navi{
+   height: 53px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 400;
+   font-size: 12px;
+   .navi_section_a{
+      span>a{
+         color:$navcolor ;
+      }
+   }
+   .navi_section_b{
+      position: relative;
+      span::before{
+         content: url(../../nav_img/Vector.png);
+         position: absolute;
+         left: -20px;
+      }
+      span>a{
+         color:$navcolor ;
+      }
+   }
+   .navi_section_c{
+      ul{
+         display: flex;
+         align-items: center;
+         li{
+            margin: 0px 12px;
+            position: relative;
+            #cont::after{
+               content: url(../../nav_img/MapTrifold.png);
+               position: absolute;
+               left: 60px;
+               bottom: -5px;
+            }
+         }
+         span>a{
+            color:$navcolor ;
+         }
+      }
+      
+   }
+   .navi_section_d{
+      width: 24px;
+      height: 16px;
+      background-color: white;
+      text-align: center;
+      padding-top: 4px;
+      span{
+         color:$navcolor ;
+      }
+   }
+}
+
+hr{
+   background-color: #CBD8E9;
+   border: none;
+   height: 1px;
+}
+// menu
+.menu{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 30px 0px 50px;
+   font-family: 'Ubuntu', sans-serif;
+   
+   .menu_b{
+      ul{
+         display: flex;
+         align-items: center;
+         li{
+            margin: 0px 14.5px;
+           span{
+            font-weight: 400;
+            font-size: 18px;
+            color: $maincolor;
+           }
+         }
+      }
+   }
+   .menu_c>span{
+      position: relative;
+      a{
+         color: $maincolor;
+         font-weight: 700;
+         font-size: 16px;
+      }
+   }
+   .menu_c>span>a::before{
+      content: url(../../menu_img/phone.png);
+      position: absolute;
+      top: 1px;
+      left: -20px;
+   }
+   .menu_c>span>a::after{
+      content: url(../../menu_img/search.png);
+      position: absolute;
+      bottom: -5px;
+      left: 130px;
+   }
+   .menu_d{
+      .blue_button{
+         @include bluebutton;
+      }
+      .white_button{
+         @include whitebutton;
+      }
+      button{
+         margin-left: 15px;
+      }
+   }
+}
+// promo
+.promo{
+   position: relative;
+   h1{
+      margin: 40px 0px 23px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 700;
+      span{
+         color: $maincolor;
+      }
+   }
+   #ellipse{
+      position: absolute;
+      left: 515px;
+      top: -25px;
+   }
+   #number{
+      position: absolute;
+      left: 496px;
+      bottom: -90px;
+   }
+   #man{
+      position: absolute;
+      left: 476px;
+      bottom: -150px;
+   }
+   .slogan{
+      margin-bottom: 42px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+   }
+   .blue_button{
+      @include bluebutton(190px,68px );
+      margin-right: 20px;
+   }
+   .white_button{
+      @include whitebutton(159px,68px )
+   }
+   .article{
+      width: 239px;
+      height: 282px;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      .article_element{
+         :first-child{
+            @include font(700, 60px);
+            color: $maincolor;
+         }
+         :last-child{
+            @include font(300, 16px);
+            padding-left: 97px;
+            margin: 17px 0px 36px;
+            background: url(../img/Wallet.svg) no-repeat 15%;
+         }
+      }
+      .change{
+         :last-child{
+            background: url(../img/ClockClockwise.svg) no-repeat 15%;
+         }
+      }
+   }
+}
+// vklad
+main{
+   #vklad{
+      @include font(300, 34px);
+      margin: 103px 0px 45px;
+   }
+   .vklad_p{
+      padding-left: 88px;
+      background: url(../img/Frame.svg) no-repeat,
+                  url(../img/ClockClockwise.svg) no-repeat 3% 13%;
+   }
+   .two{
+      background: url(../img/Frame.svg) no-repeat,
+                  url(../img/Coin.svg) no-repeat 3% 13%;
+   }
+   .three{
+      background: url(../img/Frame.svg) no-repeat,
+                  url(../img/ChartBar.svg) no-repeat 3% 8%;
+   }
+   .vklad_div{
+      display: flex;
+      justify-content: space-between;
+      .vklad_header{
+         @include font(700, 36px);
+         color: $maincolor;
+         margin-bottom: 10px;
+      }
+      .vklad_text{
+         @include font(300, 16px);
+         line-height: 140%;
+      }
+   }
+}
+// tarif
+main{
+   #tarif{
+      @include font(300, 34px);
+      margin: 101px 0px 34px;
+   }
+   .tarif_header{
+      display: flex;
+      justify-content: space-between;
+      @include font(300, 16px);
+      .tarif-header-element-one{
+         width: 227px;
+      }
+      .tarif-header-element-two{
+         width: 308px;
+      }
+   }
+   // 1 строка
+   .three_month{
+      display: flex;
+      justify-content: space-between;
+      height: 61px;
+      @include font(300, 14px);
+      margin: 15px 0px;
+      .column{
+         width: 227px;
+         border-radius: 20px 0px 40px 0px;
+         background: #60AAFB;
+         @include font(700, 20px);
+         line-height: 140%;
+         color: #fff;
+         padding: 7px 10px;
+      }
+      .back_summa{
+         height: 29px;
+         width: 308px;
+         border-radius: 10px 0px 20px 0px;
+         background: #EBF6FF;
+         padding: 8px 33px 8px 11px;
+         margin-bottom: 3px;
+      }
+      .back_summa:hover{
+         background: $maincolor;
+         cursor: pointer;
+         color: white;
+         transform: scale(1.1);
+         transition: 0.7s;
+      }
+      .last-line{
+         margin-bottom: 0px;
+      }
+      .column-font{
+         @include font(700, 14px);
+      }
+      .last-font{
+         @include font(700, 14px);
+         color: $maincolor;
+      }
+   }
+   // 2 строка
+   .six_month{
+      display: flex;
+      justify-content: space-between;
+      height: 94px;
+      @include font(300, 14px);
+      margin: 15px 0px;
+      .column{
+         width: 227px;
+         border-radius: 20px 0px 40px 0px;
+         background: #355DFB;
+         @include font(700, 20px);
+         line-height: 140%;
+         color: #fff;
+         padding: 7px 10px;
+      }
+      .back_summa{
+         height: 29px;
+         width: 308px;
+         border-radius: 10px 0px 20px 0px;
+         background: #EBF6FF;
+         padding: 8px 33px 8px 11px;
+         margin-bottom: 3px;
+      }
+      .back_summa:hover{
+         background: $maincolor;
+         cursor: pointer;
+         color: white;
+         transform: scale(1.1);
+         transition: 0.7s;
+      }
+      .last-line{
+         margin-bottom: 0px;
+      }
+      .column-font{
+         @include font(700, 14px);
+      }
+      .last-font{
+         @include font(700, 14px);
+         color: $maincolor;
+      }
+   }
+   // 3 строка
+   .twenty_month{
+      display: flex;
+      justify-content: space-between;
+      height: 157px;
+      @include font(300, 14px);
+      margin: 15px 0px;
+      .column{
+         width: 227px;
+         border-radius: 20px 0px 40px 0px;
+         background: $maincolor;
+         @include font(700, 20px);
+         line-height: 140%;
+         color: #fff;
+         padding: 7px 10px;
+      }
+      .back_summa{
+         height: 29px;
+         width: 308px;
+         border-radius: 10px 0px 20px 0px;
+         background: #EBF6FF;
+         padding: 8px 33px 8px 11px;
+         margin-bottom: 3px;
+      }
+      .back_summa:hover{
+         background: $maincolor;
+         cursor: pointer;
+         color: white;
+         transform: scale(1.1);
+         transition: 0.7s;
+      }
+      .last-line{
+         margin-bottom: 0px;
+      }
+      .column-font{
+         @include font(700, 14px);
+      }
+      .last-font{
+         @include font(700, 14px);
+         color: $maincolor;
+      }
+   }
+   // 4 строка
+   .twentyfor_month{
+      display: flex;
+      justify-content: space-between;
+      height: 157px;
+      @include font(300, 14px);
+      margin: 15px 0px;
+      .column{
+         width: 227px;
+         border-radius: 20px 0px 40px 0px;
+         background: #191999;
+         @include font(700, 20px);
+         line-height: 140%;
+         color: #fff;
+         padding: 7px 10px;
+      }
+      .back_summa{
+         height: 29px;
+         width: 308px;
+         border-radius: 10px 0px 20px 0px;
+         background: #EBF6FF;
+         padding: 8px 33px 8px 11px;
+         margin-bottom: 3px;
+      }
+      .back_summa:hover{
+         background: $maincolor;
+         cursor: pointer;
+         color: white;
+         transform: scale(1.1);
+         transition: 0.7s;
+      }
+      .last-line{
+         margin-bottom: 0px;
+      }
+      .column-font{
+         @include font(700, 14px);
+      }
+      .last-font{
+         @include font(700, 14px);
+         color: $maincolor;
+      }
+   }
+   // 5 строка
+   .thirty-six_month{
+      display: flex;
+      justify-content: space-between;
+      height: 157px;
+      @include font(300, 14px);
+      margin: 15px 0px;
+      .column{
+         width: 227px;
+         border-radius: 20px 0px 40px 0px;
+         background: #030354;
+         @include font(700, 20px);
+         line-height: 140%;
+         color: #fff;
+         padding: 7px 10px;
+      }
+      .back_summa{
+         height: 29px;
+         width: 308px;
+         border-radius: 10px 0px 20px 0px;
+         background: #EBF6FF;
+         padding: 8px 33px 8px 11px;
+         margin-bottom: 3px;
+      }
+      .back_summa:hover{
+         background: $maincolor;
+         cursor: pointer;
+         color: white;
+         transform: scale(1.1);
+         transition: 0.7s;
+      }
+      .last-line{
+         margin-bottom: 0px;
+      }
+      .column-font{
+         @include font(700, 14px);
+      }
+      .last-font{
+         @include font(700, 14px);
+         color: $maincolor;
+      }
+   }
+}
+// Кнопки
+main{
+   .blue_button{
+      @include bluebutton(190px, 68px);
+      margin-right: 16px;
+   }
+   .white_button{
+      @include whitebutton(302px, 68px);
+      background-color: #EBF6FF;
+      @include font(500, 16px);
+      position: relative;
+      #calculator::after{
+         content: url(../img/Calculator.svg);
+         position: absolute;
+         bottom: 15px;
+      }
+   }
+}
+// Консультация
+main{
+   .consultation_div{
+      position: relative;
+      z-index: 2;
+      margin-top: 240px;
+      h3{
+         @include font (300, 34px);
+         span{
+            color: $maincolor;
+            font-weight: 700;
+         }
+      }
+      p{
+         @include font(300, 16px);
+         line-height: 140%;
+         color: #6E9BB8;
+         margin: 17px 0px 33px;
+      }
+      .blue_button{
+         @include bluebutton(250px, 68px);
+         margin-right: 16px;
+      }
+      .white_button{
+         @include whitebutton(153px, 68px);
+      }
+   }
+}
+// Отзывы клиентов
+main{
+   #reviews{
+      margin: 952px 0px 93px;
+      @include font(300, 34px);
+   }
+   .reviews_container{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
+      .reviews_a{
+         width: 405px;
+         height: 202px;
+         background: url(../../back_img/play.png) no-repeat 76% 50%,
+                     url(../../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../../back_img/man1.png) no-repeat;
+         z-index: 4;
+         .name{
+            margin: 242px 0px 10px;
+            @include font(700, 18px)
+         }
+         .name_atribut{
+            color: #6E9BB8;
+            @include font(400, 16px)
+         }
+      }
+      .w{
+         background: url(../../back_img/play.png) no-repeat 76% 50%,
+                     url(../../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../../back_img/women.png) no-repeat;
+      }
+      .m{
+         background: url(../../back_img/play.png) no-repeat 76% 50%,
+                     url(../../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../../back_img/man2.png) no-repeat;
+      }
+   }
+   .reviews_button{
+      width: 405px;
+      margin: 125px auto;
+      text-align: center;
+      .review_b{
+         position: relative;
+         z-index: 3;
+         @include whitebutton(405px, 48px );
+         span{
+            @include font(500, 14px);
+         }
+      }
+   }
+}
+// Рекомендуемые продукты
+main{
+.recommendation{
+   margin-bottom: 118px;
+   h6{
+      margin: 98px 0px 30px;
+      @include font(300, 34px);
+   }
+   .top_div{
+      display: flex;
+      margin-bottom: 15px;
+      .wide-left{
+         margin-right: 15px;
+      }
+      .wide{
+         border-radius: 6px;
+         width: 615px;
+         padding: 32px 40px 38px;
+         background: url(../../back_img/family.png) no-repeat 125% bottom;
+         background-color: #F0F4F8;
+         .wide_left{
+            width: 354px;
+            .wide_left_text{
+               @include font (300, 16px);
+               color: #6E9BB8;
+               margin: 26px 0px 27px;
+            }
+            .head_text{
+               color: #79A6C3;
+               @include font(400, 14px);
+            }
+            h4{
+               @include font(700, 24px);
+               margin: 10px 0px 20px;
+            }
+            .wide_left_flex{
+               display: flex;
+                  div:first-of-type{
+                     padding-right: 40px;
+                  }
+                  .wide_text{
+                     @include font(400, 14px);
+                  }
+                  .wide_numbers{
+                     color: #355DFB;
+                     @include font(700, 36px)
+                  }
+                  span{
+                     display:block;
+                  }
+            }
+            .blue_button{
+               @include bluebutton(166px, 48px);
+               margin-right: 17px;
+            }
+            .white_button{
+               @include whitebutton(133px, 48px);
+            }
+         }
+      }
+      .wide-right{
+         background: url(../../back_img/businessman.png) no-repeat 117% bottom;
+         background-color: #F0F4F8;;
+      }
+   }
+ }
+}
+
+// Контейнер пошире
+.container_z{
+   width: 1368px; 
+   margin: 0 auto;
+   position: absolute;
+   top: 922px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   .consultation{
+      height: 354px;
+      background: #F0F4F8;
+      border-radius: 64px 6px;
+      margin-top: 1215px;
+      
+      div{
+         background: url(../../invest_page/back_gif/whiteback.gif) no-repeat 85%;
+         position: relative;
+         height: 100%;
+         z-index: 1;
+         img{
+            position: absolute;
+            left: 835px;
+            bottom: 0px;
+         }
+      }
+   }
+    // Онлайн заявка
+    .online{
+      width: 1368px;
+      height: 664px;
+      background: #FFFFFF;
+      box-shadow: 6px 6px 70px rgba(0, 0, 0, 0.09);
+      border-radius: 64px 6px;
+      margin-top: 104px;
+      background: url(../../invest_page/img_web/manonline.webp) no-repeat right bottom;
+      .online_container{
+         width: 1245px;
+         margin: 0 auto;
+         height: 100%;
+         h6{
+            @include font(300, 34px);
+            padding: 87px 0px 49px;
+         }
+         .grand_div{
+            display: flex;
+            justify-content: left;
+            box-sizing: border-box;
+            .grand_item{
+               width: 300px;
+               height: 311px;
+               margin-right: 15px;
+               .grand-header{
+                  @include font(300, 22px);
+                  color: $maincolor;
+               }
+               input{
+                  width: 300px;
+                  height: 68px;
+                  border: 1px solid #DCEAF7;
+                  border-radius: 10px;
+                  margin-top: 30px;
+               }
+               select{
+                   width: 300px;
+                  height: 68px;
+                  border: 1px solid #DCEAF7;
+                  border-radius: 10px;
+                  margin-top: 30px;
+                  @include font(300, 20px);
+                  padding: 10px;
+               }
+            }
+            .first_grand{
+               form{
+                  :nth-child(1){
+                     margin-top: 15px;
+                  }
+               }
+            }
+            .three_grand{
+               form{
+                  :nth-child(1){
+                     margin-top: 15px;
+                  }
+               }
+            }
+            .second_grand{
+               form{
+                  padding-top: 17px;
+               }
+            }
+            form{
+               input{
+                  padding: 10px;
+                  @include font(300, 20px);
+               }
+            }
+         }
+         .blue_button{
+            @include bluebutton(224px, 68px);
+            @include font(500, 16px);
+            margin: 56px 30px 0 0;
+         }
+         div{
+            display: inline-block;
+            span{
+               @include font(400, 12px);
+               color: #9AB5C6;
+               line-height: 150%;
+            }
+         }
+      }
+   }
+   .bg_reviews{
+      width: 1368px;
+      height: 460px;
+      background: #F0F4F8;
+      border-radius: 120px 6px;
+      margin-top: 180px;
+   }
+}
+
+// footer
+footer{
+   height: 669px;
+   background: #F0F4F8;
+   margin-top: 3856px;
+   .footer_container{
+      width: 1245px;
+      margin: 0 auto;
+      height: 100%;
+      .logo_form{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom:71px;
+         padding-top: 87px;
+         input{
+            height: 48px;
+            width: 891px;
+            padding-left: 57px;
+            background: url(../../back_img/MagnifyingGlass.png) no-repeat 1% 50%;
+            background-color: white;
+            border-radius: 6px;
+            border: none;
+         }
+      }
+      .footer_menu{
+         display: flex;
+         justify-content: space-between;
+         .contacts{
+            .number{
+               @include font(700, 37px);
+               color: $maincolor;
+               a:visited{
+                  color: $maincolor;
+                 }
+            }
+            .email{
+               @include font(400, 12px);
+               color: #6E9BB8;
+               margin: 8px 0px 45px;
+            }
+            .addres{
+               @include font(400, 18px);
+               color: $maincolor;
+            }
+            .icons{
+               font-size: 40px;
+               color: #3387be;
+              a{
+               i{
+                  margin: 0px 3px;
+               }
+              }
+              a{
+               i:hover{
+                  transform: scale(1.4);
+               }
+              }
+              a:visited{
+               color: #3387be;
+              }
+            }
+         }
+         .box{
+            h3{
+               @include font(400, 20px);
+               color: $maincolor;
+               margin-bottom: 14px;
+            }
+            ul{
+               margin-top: 55px;
+               li{
+                  @include font(400, 14px);
+                  margin-top: 20px;
+                  a:visited{
+                     color:black;
+                  }
+               }
+            }
+         }
+      }
+      .h{
+         margin: 62px 0px 11px;
+         @include font(700, 12px);
+         color: #6E9BB8;
+      }
+      .h_text{
+         @include font(400, 12px);
+         color: #6E9BB8;
+      }
+      .h_info{
+         margin: 60px 0px 16px;
+         @include font(400, 12px);
+         color: #6E9BB8;
+         span{
+            margin-right: 21px;
+         }
+         a:visited{
+            color: $navcolor;
+         }
+      }
+   }
+}

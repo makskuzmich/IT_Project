@@ -1,0 +1,202 @@
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@-webkit-keyframes fix { from { background: #5f5fa3; color: #07c9fa; }
+  50% { background: #be1cdf; -webkit-columns: #f3ad2b; columns: #f3ad2b; }
+  80% { background: #0000DE; color: #8484ac; }
+  to { background: #8f8fdd; color: #1414e6; } }
+
+@keyframes fix { from { background: #5f5fa3; color: #07c9fa; }
+  50% { background: #be1cdf; -webkit-columns: #f3ad2b; columns: #f3ad2b; }
+  80% { background: #0000DE; color: #8484ac; }
+  to { background: #8f8fdd; color: #1414e6; } }
+a { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+button:hover { cursor: pointer; }
+
+.block { width: 1920px; height: 630px; background: #F0F4F8; position: relative; }
+
+.fixed { position: fixed; bottom: 10px; left: 10px; width: 80px; height: 80px; border-radius: 50%; background-color: #0000DE; -webkit-animation: fix 4s infinite; animation: fix 4s infinite; }
+.fixed span { position: relative; top: 30px; left: 10px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; color: #FFFFFF; }
+
+.container { width: 1245px; position: absolute; margin: 0 auto; top: 0; left: 0; right: 0; }
+
+.header { height: 630px; }
+.header p a { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #8FB1C7; -webkit-text-decoration-line: underline; text-decoration-line: underline; margin-right: 10px; }
+.header p a:nth-child(1)::after { content: url(../../online_page/img/strelka.png); padding-left: 10px; }
+.header p a:nth-child(2)::after { content: url(../../online_page/img/strelka.png); padding-left: 10px; }
+
+.navi { height: 53px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-family: 'Ubuntu', sans-serif; font-weight: 400; font-size: 12px; }
+.navi .navi_section_a span > a { color: #6E9BB8; }
+.navi .navi_section_b { position: relative; }
+.navi .navi_section_b span::before { content: url(../../nav_img/Vector.png); position: absolute; left: -20px; }
+.navi .navi_section_b span > a { color: #6E9BB8; }
+.navi .navi_section_c ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.navi .navi_section_c ul li { margin: 0px 12px; position: relative; }
+.navi .navi_section_c ul li #cont::after { content: url(../../nav_img/MapTrifold.png); position: absolute; left: 60px; bottom: -5px; }
+.navi .navi_section_c ul span > a { color: #6E9BB8; }
+.navi .navi_section_d { width: 24px; height: 16px; background-color: white; text-align: center; padding-top: 4px; }
+.navi .navi_section_d span { color: #6E9BB8; }
+
+hr { background-color: #CBD8E9; border: none; height: 1px; }
+
+.menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 30px 0px 50px; font-family: 'Ubuntu', sans-serif; }
+.menu .menu_b ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.menu .menu_b ul li { margin: 0px 14.5px; }
+.menu .menu_b ul li span { font-weight: 400; font-size: 18px; color: #0000DE; }
+.menu .menu_c > span { position: relative; }
+.menu .menu_c > span a { color: #0000DE; font-weight: 700; font-size: 16px; }
+.menu .menu_c > span > a::before { content: url(../../menu_img/phone.png); position: absolute; top: 1px; left: -20px; }
+.menu .menu_c > span > a::after { content: url(../../menu_img/search.png); position: absolute; bottom: -5px; left: 130px; }
+.menu .menu_d .blue_button { background: #0000DE; border-radius: 20px 0px; width: 174px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; }
+.menu .menu_d .white_button { background: #FFFFFF; border-radius: 20px 0px; width: 174px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
+.menu .menu_d button { margin-left: 15px; }
+
+.promo { position: relative; }
+.promo h1 { margin: 40px 0px 23px; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; }
+.promo h1 span { color: #0000DE; }
+.promo #ellipse { position: absolute; left: 515px; top: -25px; }
+.promo #number { position: absolute; left: 496px; bottom: -90px; }
+.promo #man { position: absolute; left: 476px; bottom: -150px; }
+.promo .slogan { margin-bottom: 42px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 18px; }
+.promo .blue_button { background: #0000DE; border-radius: 20px 0px; width: 190px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; margin-right: 20px; }
+.promo .white_button { background: #FFFFFF; border-radius: 20px 0px; width: 159px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
+.promo .article { width: 239px; height: 282px; position: absolute; right: 0px; bottom: 0px; }
+.promo .article .article_element :first-child { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 60px; color: #0000DE; }
+.promo .article .article_element :last-child { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 16px; padding-left: 97px; margin: 17px 0px 36px; background: url(../img/Wallet.svg) no-repeat 15%; }
+.promo .article .change :last-child { background: url(../img/ClockClockwise.svg) no-repeat 15%; }
+
+main #vklad { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; margin: 103px 0px 45px; }
+main .vklad_p { padding-left: 88px; background: url(../img/Frame.svg) no-repeat, url(../img/ClockClockwise.svg) no-repeat 3% 13%; }
+main .two { background: url(../img/Frame.svg) no-repeat, url(../img/Coin.svg) no-repeat 3% 13%; }
+main .three { background: url(../img/Frame.svg) no-repeat, url(../img/ChartBar.svg) no-repeat 3% 8%; }
+main .vklad_div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+main .vklad_div .vklad_header { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 36px; color: #0000DE; margin-bottom: 10px; }
+main .vklad_div .vklad_text { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 16px; line-height: 140%; }
+
+main #tarif { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; margin: 101px 0px 34px; }
+main .tarif_header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 16px; }
+main .tarif_header .tarif-header-element-one { width: 227px; }
+main .tarif_header .tarif-header-element-two { width: 308px; }
+main .three_month { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 61px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; margin: 15px 0px; }
+main .three_month .column { width: 227px; border-radius: 20px 0px 40px 0px; background: #60AAFB; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 140%; color: #fff; padding: 7px 10px; }
+main .three_month .back_summa { height: 29px; width: 308px; border-radius: 10px 0px 20px 0px; background: #EBF6FF; padding: 8px 33px 8px 11px; margin-bottom: 3px; }
+main .three_month .back_summa:hover { background: #0000DE; cursor: pointer; color: white; -webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: 0.7s; transition: 0.7s; }
+main .three_month .last-line { margin-bottom: 0px; }
+main .three_month .column-font { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 14px; }
+main .three_month .last-font { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 14px; color: #0000DE; }
+main .six_month { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 94px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; margin: 15px 0px; }
+main .six_month .column { width: 227px; border-radius: 20px 0px 40px 0px; background: #355DFB; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 140%; color: #fff; padding: 7px 10px; }
+main .six_month .back_summa { height: 29px; width: 308px; border-radius: 10px 0px 20px 0px; background: #EBF6FF; padding: 8px 33px 8px 11px; margin-bottom: 3px; }
+main .six_month .back_summa:hover { background: #0000DE; cursor: pointer; color: white; -webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: 0.7s; transition: 0.7s; }
+main .six_month .last-line { margin-bottom: 0px; }
+main .six_month .column-font { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 14px; }
+main .six_month .last-font { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 14px; color: #0000DE; }
+main .twenty_month { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 157px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; margin: 15px 0px; }
+main .twenty_month .column { width: 227px; border-radius: 20px 0px 40px 0px; background: #0000DE; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 140%; color: #fff; padding: 7px 10px; }
+main .twenty_month .back_summa { height: 29px; width: 308px; border-radius: 10px 0px 20px 0px; background: #EBF6FF; padding: 8px 33px 8px 11px; margin-bottom: 3px; }
+main .twenty_month .back_summa:hover { background: #0000DE; cursor: pointer; color: white; -webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: 0.7s; transition: 0.7s; }
+main .twenty_month .last-line { margin-bottom: 0px; }
+main .twenty_month .column-font { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 14px; }
+main .twenty_month .last-font { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 14px; color: #0000DE; }
+main .twentyfor_month { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 157px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; margin: 15px 0px; }
+main .twentyfor_month .column { width: 227px; border-radius: 20px 0px 40px 0px; background: #191999; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 140%; color: #fff; padding: 7px 10px; }
+main .twentyfor_month .back_summa { height: 29px; width: 308px; border-radius: 10px 0px 20px 0px; background: #EBF6FF; padding: 8px 33px 8px 11px; margin-bottom: 3px; }
+main .twentyfor_month .back_summa:hover { background: #0000DE; cursor: pointer; color: white; -webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: 0.7s; transition: 0.7s; }
+main .twentyfor_month .last-line { margin-bottom: 0px; }
+main .twentyfor_month .column-font { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 14px; }
+main .twentyfor_month .last-font { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 14px; color: #0000DE; }
+main .thirty-six_month { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; height: 157px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; margin: 15px 0px; }
+main .thirty-six_month .column { width: 227px; border-radius: 20px 0px 40px 0px; background: #030354; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 20px; line-height: 140%; color: #fff; padding: 7px 10px; }
+main .thirty-six_month .back_summa { height: 29px; width: 308px; border-radius: 10px 0px 20px 0px; background: #EBF6FF; padding: 8px 33px 8px 11px; margin-bottom: 3px; }
+main .thirty-six_month .back_summa:hover { background: #0000DE; cursor: pointer; color: white; -webkit-transform: scale(1.1); transform: scale(1.1); -webkit-transition: 0.7s; transition: 0.7s; }
+main .thirty-six_month .last-line { margin-bottom: 0px; }
+main .thirty-six_month .column-font { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 14px; }
+main .thirty-six_month .last-font { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 14px; color: #0000DE; }
+
+main .blue_button { background: #0000DE; border-radius: 20px 0px; width: 190px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; margin-right: 16px; }
+main .white_button { background: #FFFFFF; border-radius: 20px 0px; width: 302px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; background-color: #EBF6FF; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 16px; position: relative; }
+main .white_button #calculator::after { content: url(../img/Calculator.svg); position: absolute; bottom: 15px; }
+
+main .consultation_div { position: relative; z-index: 2; margin-top: 240px; }
+main .consultation_div h3 { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; }
+main .consultation_div h3 span { color: #0000DE; font-weight: 700; }
+main .consultation_div p { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 16px; line-height: 140%; color: #6E9BB8; margin: 17px 0px 33px; }
+main .consultation_div .blue_button { background: #0000DE; border-radius: 20px 0px; width: 250px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; margin-right: 16px; }
+main .consultation_div .white_button { background: #FFFFFF; border-radius: 20px 0px; width: 153px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
+
+main #reviews { margin: 952px 0px 93px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; }
+main .reviews_container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; position: relative; z-index: 2; }
+main .reviews_container .reviews_a { width: 405px; height: 202px; background: url(../../back_img/play.png) no-repeat 76% 50%, url(../../back_img/rew2.png) no-repeat 92% 190%, url(../../back_img/rew1.png) no-repeat 80% 50%, url(../../back_img/man1.png) no-repeat; z-index: 4; }
+main .reviews_container .reviews_a .name { margin: 242px 0px 10px; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 18px; }
+main .reviews_container .reviews_a .name_atribut { color: #6E9BB8; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 16px; }
+main .reviews_container .w { background: url(../../back_img/play.png) no-repeat 76% 50%, url(../../back_img/rew2.png) no-repeat 92% 190%, url(../../back_img/rew1.png) no-repeat 80% 50%, url(../../back_img/women.png) no-repeat; }
+main .reviews_container .m { background: url(../../back_img/play.png) no-repeat 76% 50%, url(../../back_img/rew2.png) no-repeat 92% 190%, url(../../back_img/rew1.png) no-repeat 80% 50%, url(../../back_img/man2.png) no-repeat; }
+main .reviews_button { width: 405px; margin: 125px auto; text-align: center; }
+main .reviews_button .review_b { position: relative; z-index: 3; background: #FFFFFF; border-radius: 20px 0px; width: 405px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
+main .reviews_button .review_b span { font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; }
+
+main .recommendation { margin-bottom: 118px; }
+main .recommendation h6 { margin: 98px 0px 30px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; }
+main .recommendation .top_div { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 15px; }
+main .recommendation .top_div .wide-left { margin-right: 15px; }
+main .recommendation .top_div .wide { border-radius: 6px; width: 615px; padding: 32px 40px 38px; background: url(../../back_img/family.png) no-repeat 125% bottom; background-color: #F0F4F8; }
+main .recommendation .top_div .wide .wide_left { width: 354px; }
+main .recommendation .top_div .wide .wide_left .wide_left_text { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 16px; color: #6E9BB8; margin: 26px 0px 27px; }
+main .recommendation .top_div .wide .wide_left .head_text { color: #79A6C3; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 14px; }
+main .recommendation .top_div .wide .wide_left h4 { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 24px; margin: 10px 0px 20px; }
+main .recommendation .top_div .wide .wide_left .wide_left_flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+main .recommendation .top_div .wide .wide_left .wide_left_flex div:first-of-type { padding-right: 40px; }
+main .recommendation .top_div .wide .wide_left .wide_left_flex .wide_text { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 14px; }
+main .recommendation .top_div .wide .wide_left .wide_left_flex .wide_numbers { color: #355DFB; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 36px; }
+main .recommendation .top_div .wide .wide_left .wide_left_flex span { display: block; }
+main .recommendation .top_div .wide .wide_left .blue_button { background: #0000DE; border-radius: 20px 0px; width: 166px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; margin-right: 17px; }
+main .recommendation .top_div .wide .wide_left .white_button { background: #FFFFFF; border-radius: 20px 0px; width: 133px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
+main .recommendation .top_div .wide-right { background: url(../../back_img/businessman.png) no-repeat 117% bottom; background-color: #F0F4F8; }
+
+.container_z { width: 1368px; margin: 0 auto; position: absolute; top: 922px; bottom: 0; left: 0; right: 0; }
+.container_z .consultation { height: 354px; background: #F0F4F8; border-radius: 64px 6px; margin-top: 1215px; }
+.container_z .consultation div { background: url(../../invest_page/back_gif/whiteback.gif) no-repeat 85%; position: relative; height: 100%; z-index: 1; }
+.container_z .consultation div img { position: absolute; left: 835px; bottom: 0px; }
+.container_z .online { width: 1368px; height: 664px; background: #FFFFFF; -webkit-box-shadow: 6px 6px 70px rgba(0, 0, 0, 0.09); box-shadow: 6px 6px 70px rgba(0, 0, 0, 0.09); border-radius: 64px 6px; margin-top: 104px; background: url(../../invest_page/img_web/manonline.webp) no-repeat right bottom; }
+.container_z .online .online_container { width: 1245px; margin: 0 auto; height: 100%; }
+.container_z .online .online_container h6 { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; padding: 87px 0px 49px; }
+.container_z .online .online_container .grand_div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: left; -ms-flex-pack: left; justify-content: left; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.container_z .online .online_container .grand_div .grand_item { width: 300px; height: 311px; margin-right: 15px; }
+.container_z .online .online_container .grand_div .grand_item .grand-header { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 22px; color: #0000DE; }
+.container_z .online .online_container .grand_div .grand_item input { width: 300px; height: 68px; border: 1px solid #DCEAF7; border-radius: 10px; margin-top: 30px; }
+.container_z .online .online_container .grand_div .grand_item select { width: 300px; height: 68px; border: 1px solid #DCEAF7; border-radius: 10px; margin-top: 30px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 20px; padding: 10px; }
+.container_z .online .online_container .grand_div .first_grand form :nth-child(1) { margin-top: 15px; }
+.container_z .online .online_container .grand_div .three_grand form :nth-child(1) { margin-top: 15px; }
+.container_z .online .online_container .grand_div .second_grand form { padding-top: 17px; }
+.container_z .online .online_container .grand_div form input { padding: 10px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 20px; }
+.container_z .online .online_container .blue_button { background: #0000DE; border-radius: 20px 0px; width: 224px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 16px; margin: 56px 30px 0 0; }
+.container_z .online .online_container div { display: inline-block; }
+.container_z .online .online_container div span { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #9AB5C6; line-height: 150%; }
+.container_z .bg_reviews { width: 1368px; height: 460px; background: #F0F4F8; border-radius: 120px 6px; margin-top: 180px; }
+
+footer { height: 669px; background: #F0F4F8; margin-top: 3856px; }
+footer .footer_container { width: 1245px; margin: 0 auto; height: 100%; }
+footer .footer_container .logo_form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 71px; padding-top: 87px; }
+footer .footer_container .logo_form input { height: 48px; width: 891px; padding-left: 57px; background: url(../../back_img/MagnifyingGlass.png) no-repeat 1% 50%; background-color: white; border-radius: 6px; border: none; }
+footer .footer_container .footer_menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+footer .footer_container .footer_menu .contacts .number { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 37px; color: #0000DE; }
+footer .footer_container .footer_menu .contacts .number a:visited { color: #0000DE; }
+footer .footer_container .footer_menu .contacts .email { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #6E9BB8; margin: 8px 0px 45px; }
+footer .footer_container .footer_menu .contacts .addres { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 18px; color: #0000DE; }
+footer .footer_container .footer_menu .contacts .icons { font-size: 40px; color: #3387be; }
+footer .footer_container .footer_menu .contacts .icons a i { margin: 0px 3px; }
+footer .footer_container .footer_menu .contacts .icons a i:hover { -webkit-transform: scale(1.4); transform: scale(1.4); }
+footer .footer_container .footer_menu .contacts .icons a:visited { color: #3387be; }
+footer .footer_container .footer_menu .box h3 { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 20px; color: #0000DE; margin-bottom: 14px; }
+footer .footer_container .footer_menu .box ul { margin-top: 55px; }
+footer .footer_container .footer_menu .box ul li { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 14px; margin-top: 20px; }
+footer .footer_container .footer_menu .box ul li a:visited { color: black; }
+footer .footer_container .h { margin: 62px 0px 11px; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 12px; color: #6E9BB8; }
+footer .footer_container .h_text { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #6E9BB8; }
+footer .footer_container .h_info { margin: 60px 0px 16px; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #6E9BB8; }
+footer .footer_container .h_info span { margin-right: 21px; }
+footer .footer_container .h_info a:visited { color: #6E9BB8; }
+
+/*# sourceMappingURL=stylse.css.map */

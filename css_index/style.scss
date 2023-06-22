@@ -56,6 +56,12 @@ $navcolor: #6E9BB8;
       @include font(500, 16px);
    }
 }
+@keyframes fix{
+   from{background: #5f5fa3; color: rgb(7, 201, 250);}
+   50%{background: #be1cdf; columns: rgb(243, 173, 43);}
+   80%{background: #0000DE; color: #8484ac;}
+   to{background: #8f8fdd; color: #1414e6;}
+}
 
 a{
   text-decoration: none;
@@ -71,6 +77,23 @@ button:hover{
    position: relative;
 }
 
+.fixed{
+   position: fixed;
+   bottom: 10px;
+   left: 10px;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background-color: #0000DE;
+   animation: fix 4s infinite;
+   span{
+      position: relative;
+      top: 30px;
+      left: 10px;
+      @include font(300, 14px);
+      color: #FFFFFF;
+   }
+}
 .container{
    width: 1245px;
    position: absolute;
