@@ -1,0 +1,108 @@
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { height: 10000px; }
+
+@-webkit-keyframes fix { from { background: #5f5fa3; color: #07c9fa; }
+  50% { background: #be1cdf; -webkit-columns: #f3ad2b; columns: #f3ad2b; }
+  80% { background: #0000DE; color: #8484ac; }
+  to { background: #8f8fdd; color: #1414e6; } }
+
+@keyframes fix { from { background: #5f5fa3; color: #07c9fa; }
+  50% { background: #be1cdf; -webkit-columns: #f3ad2b; columns: #f3ad2b; }
+  80% { background: #0000DE; color: #8484ac; }
+  to { background: #8f8fdd; color: #1414e6; } }
+a { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+button:hover { cursor: pointer; }
+
+.block { width: 1920px; height: 630px; background: #F0F4F8; position: relative; }
+
+.fixed { position: fixed; bottom: 10px; left: 10px; width: 80px; height: 80px; border-radius: 50%; background-color: #0000DE; -webkit-animation: fix 4s infinite; animation: fix 4s infinite; }
+.fixed span { position: relative; top: 30px; left: 10px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; color: #FFFFFF; }
+
+.container { width: 1245px; position: absolute; margin: 0 auto; top: 0; left: 0; right: 0; }
+
+.header { height: 630px; }
+.header p a { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #8FB1C7; -webkit-text-decoration-line: underline; text-decoration-line: underline; margin-right: 10px; }
+.header p a:nth-child(1)::after { content: url(../../online_page/img/strelka.png); padding-left: 10px; }
+
+.navi { height: 53px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-family: 'Ubuntu', sans-serif; font-weight: 400; font-size: 12px; }
+.navi .navi_section_a span > a { color: #6E9BB8; }
+.navi .navi_section_b { position: relative; }
+.navi .navi_section_b span::before { content: url(../../nav_img/Vector.png); position: absolute; left: -20px; }
+.navi .navi_section_b span > a { color: #6E9BB8; }
+.navi .navi_section_c ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.navi .navi_section_c ul li { margin: 0px 12px; position: relative; }
+.navi .navi_section_c ul li #cont::after { content: url(../../nav_img/MapTrifold.png); position: absolute; left: 60px; bottom: -5px; }
+.navi .navi_section_c ul span > a { color: #6E9BB8; }
+.navi .navi_section_d { width: 24px; height: 16px; background-color: white; text-align: center; padding-top: 4px; }
+.navi .navi_section_d span { color: #6E9BB8; }
+
+hr { background-color: #CBD8E9; border: none; height: 1px; }
+
+.menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 30px 0px 50px; font-family: 'Ubuntu', sans-serif; }
+.menu .menu_b ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.menu .menu_b ul li { margin: 0px 14.5px; }
+.menu .menu_b ul li span { font-weight: 400; font-size: 18px; color: #0000DE; }
+.menu .menu_c > span { position: relative; }
+.menu .menu_c > span a { color: #0000DE; font-weight: 700; font-size: 16px; }
+.menu .menu_c > span > a::before { content: url(../../menu_img/phone.png); position: absolute; top: 1px; left: -20px; }
+.menu .menu_c > span > a::after { content: url(../../menu_img/search.png); position: absolute; bottom: -5px; left: 130px; }
+.menu .menu_d .blue_button { background: #0000DE; border-radius: 20px 0px; width: 174px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; }
+.menu .menu_d .white_button { background: #FFFFFF; border-radius: 20px 0px; width: 174px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
+.menu .menu_d button { margin-left: 15px; }
+
+.promo { position: relative; }
+.promo h1 { margin: 49px 0px 23px; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 44px; }
+.promo h1 span { color: #0000DE; }
+.promo #righttop { position: absolute; left: 960px; top: -40px; }
+.promo #lefttop { position: absolute; left: 615px; bottom: 61px; }
+.promo #car { position: absolute; left: 624px; bottom: -84px; }
+.promo #wash { position: absolute; left: 905px; bottom: -76px; }
+.promo #rbot { position: absolute; left: 809px; bottom: -144px; }
+.promo .slogan { margin-bottom: 42px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 18px; }
+.promo .blue_button { background: #0000DE; border-radius: 20px 0px; width: 190px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; margin-right: 20px; }
+.promo .white_button { background: #FFFFFF; border-radius: 20px 0px; width: 159px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
+.promo .dot { width: 95px; display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; left: 500px; bottom: 30px; }
+.promo .dot div { width: 10px; height: 10px; background: #C3D1E1; border-radius: 50%; margin: 0px 4px; }
+.promo .dot > :nth-child(3) { background-color: #355DFB; }
+.promo .arrow { display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; right: 0px; top: 215px; }
+.promo .arrow .arrow_left { height: 40px; width: 40px; border-radius: 50%; background: url(../../back_img/left.png) no-repeat 50% 50%; background-color: white; }
+.promo .arrow .arrow_right { height: 40px; width: 40px; border-radius: 50%; background: url(../../back_img/right.png) no-repeat 50% 50%; background-color: white; }
+
+main .plush { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 140%; margin: 116px 0px 111px; }
+main .plush section { height: 70px; padding: 10px 0px 0px 70px; position: relative; background: url(../img/Frame.svg) no-repeat; }
+main .plush :nth-child(1)::before { content: url(../img/CheckSquareOffset.svg); position: absolute; left: 0px; top: 0px; }
+main .plush :nth-child(2)::before { content: url(../img/ClockClockwise.svg); position: absolute; left: 0px; top: 0px; }
+main .plush :nth-child(3)::before { content: url(../img/Coin.svg); position: absolute; left: 0px; top: 0px; }
+main .plush :nth-child(4)::before { content: url(../img/LightningSlash.svg); position: absolute; left: 0px; top: 0px; }
+
+.container_z { width: 1368px; margin: 0 auto; position: absolute; top: 927px; bottom: 0; left: 0; right: 0; }
+.container_z .bg_condition { height: 571px; border-radius: 64px 6px; background: #F0F4F8; }
+.container_z .bg_condition .container_condition { width: 1245px; height: 100%; margin: 0px auto; }
+.container_z .bg_condition .container_condition .condition_elements { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-top: 90px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element { height: 378px; width: 544px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element h6 { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element .left-elements { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: 75px 0px 10px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element .left-elements :first-child { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 16px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element .left-elements :last-child { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 18px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element .line { height: 6px; border-radius: 8px; background: url(../img/tline.png) no-repeat; background-color: #CFDBE8; position: relative; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element .line img { position: absolute; left: 174px; bottom: -12px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element .text_condition { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 16px; margin: 46px 0px 15px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element form label { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 224px; height: 49px; border: 1px solid #C6D9E9; border-radius: 20px 0px; text-align: center; opacity: 0.5; color: #6E9BB8; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element form label span { margin-left: 10px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 16px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element form label [type] { height: 20px; width: 20px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-left-element form label:hover { background-color: white; cursor: pointer; z-index: 3; opacity: 1; -webkit-transition: 0.4s; transition: 0.4s; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 16px; color: black; }
+.container_z .bg_condition .container_condition .condition_elements .condition-right-element { background: url(../img/bman.webp) no-repeat right bottom; z-index: 3; background-color: #fff; border-radius: 10px 10px 120px 10px; height: 378px; width: 650px; padding: 28px 234px 37px 35px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-right-element .summa { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.container_z .bg_condition .container_condition .condition_elements .condition-right-element .summa .summablue { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 36px; color: #355DFB; }
+.container_z .bg_condition .container_condition .condition_elements .condition-right-element .summa .textblack { font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; margin: 5px 0px 31px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-right-element .summa .sumred { color: red; }
+.container_z .bg_condition .container_condition .condition_elements .condition-right-element .textsum { color: #6E9BB8; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-right-element .blue_button { background: #0000DE; border-radius: 20px 0px; width: 232px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; margin-top: 33px; }
+.container_z .bg_condition .container_condition .condition_elements .condition-right-element img { position: absolute; }
+
+/*# sourceMappingURL=style.css.map */

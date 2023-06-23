@@ -1,0 +1,482 @@
+// color
+$maincolor: #0000DE;
+$navcolor: #6E9BB8;
+*{
+   box-sizing: border-box;
+}
+body{
+   height: 10000px;
+}
+// mixin
+@mixin bluebutton ($width:174px, $height:48px ){
+   background: #0000DE;
+   border-radius: 20px 0px;
+   width:$width;
+   height: $height;
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   color: white;
+   border: none;
+  
+}
+
+@mixin whitebutton ($width:174px, $height:48px ){
+   background: #FFFFFF;
+   border-radius: 20px 0px;
+   width: $width;
+   height:$height;
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   color: #0000DE;
+   border: none;
+
+}
+@mixin font($fweight:300, $fsize:20px){
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: $fweight;
+      font-size: $fsize;
+}
+@mixin label ($widthl:224px, $height:49px, $border:1px solid #C6D9E9, $opacity:0.5,$color: #6E9BB8){
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width: $widthl;
+   height: $height;
+   border: $border;
+   border-radius: 20px 0px;
+   text-align:center;
+   opacity:$opacity;
+   color: $color;
+   span{
+      margin-left: 10px;
+      @include font(500, 16px);
+   }
+}
+@keyframes fix{
+   from{background: #5f5fa3; color: rgb(7, 201, 250);}
+   50%{background: #be1cdf; columns: rgb(243, 173, 43);}
+   80%{background: #0000DE; color: #8484ac;}
+   to{background: #8f8fdd; color: #1414e6;}
+}
+
+a{
+  text-decoration: none;
+}
+a:visited{text-decoration: none;}
+button:hover{
+   cursor: pointer;
+}
+.block{
+   width: 1920px;
+   height: 630px;
+   background: #F0F4F8;
+   position: relative;
+}
+
+.fixed{
+   position: fixed;
+   bottom: 10px;
+   left: 10px;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background-color: #0000DE;
+   animation: fix 4s infinite;
+   span{
+      position: relative;
+      top: 30px;
+      left: 10px;
+      @include font(300, 14px);
+      color: #FFFFFF;
+   }
+}
+.container{
+   width: 1245px;
+   position: absolute;
+   margin: 0 auto;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+
+// header
+.header{
+   height: 630px;
+   p{
+      a{
+         @include font(400, 12px);
+         color: #8FB1C7;
+         text-decoration-line: underline;
+         margin-right: 10px;
+         
+      }
+      a:nth-child(1)::after{
+         content: url(../../online_page/img/strelka.png);
+         padding-left: 10px;
+      }
+   }
+}
+// nav
+.navi{
+   height: 53px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 400;
+   font-size: 12px;
+   .navi_section_a{
+      span>a{
+         color:$navcolor ;
+      }
+   }
+   .navi_section_b{
+      position: relative;
+      span::before{
+         content: url(../../nav_img/Vector.png);
+         position: absolute;
+         left: -20px;
+      }
+      span>a{
+         color:$navcolor ;
+      }
+   }
+   .navi_section_c{
+      ul{
+         display: flex;
+         align-items: center;
+         li{
+            margin: 0px 12px;
+            position: relative;
+            #cont::after{
+               content: url(../../nav_img/MapTrifold.png);
+               position: absolute;
+               left: 60px;
+               bottom: -5px;
+            }
+         }
+         span>a{
+            color:$navcolor ;
+         }
+      }
+      
+   }
+   .navi_section_d{
+      width: 24px;
+      height: 16px;
+      background-color: white;
+      text-align: center;
+      padding-top: 4px;
+      span{
+         color:$navcolor ;
+      }
+   }
+}
+
+hr{
+   background-color: #CBD8E9;
+   border: none;
+   height: 1px;
+}
+// menu
+.menu{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 30px 0px 50px;
+   font-family: 'Ubuntu', sans-serif;
+   
+   .menu_b{
+      ul{
+         display: flex;
+         align-items: center;
+         li{
+            margin: 0px 14.5px;
+           span{
+            font-weight: 400;
+            font-size: 18px;
+            color: $maincolor;
+           }
+         }
+      }
+   }
+   .menu_c>span{
+      position: relative;
+      a{
+         color: $maincolor;
+         font-weight: 700;
+         font-size: 16px;
+      }
+   }
+   .menu_c>span>a::before{
+      content: url(../../menu_img/phone.png);
+      position: absolute;
+      top: 1px;
+      left: -20px;
+   }
+   .menu_c>span>a::after{
+      content: url(../../menu_img/search.png);
+      position: absolute;
+      bottom: -5px;
+      left: 130px;
+   }
+   .menu_d{
+      .blue_button{
+         @include bluebutton;
+      }
+      .white_button{
+         @include whitebutton;
+      }
+      button{
+         margin-left: 15px;
+      }
+   }
+}
+// promo
+.promo{
+   position: relative;
+   h1{
+      margin: 49px 0px 23px;
+      @include font(700, 44px);
+      span{
+         color: $maincolor;
+      }
+   }
+   #righttop{
+      position: absolute;
+      left: 960px;
+      top: -40px;
+   }
+   #lefttop{
+      position: absolute;
+      left: 615px;
+      bottom: 61px;
+   }
+   #car{
+      position: absolute;
+      left: 624px;
+      bottom: -84px;
+   }
+   #wash{
+      position: absolute;
+      left: 905px;
+    bottom: -76px;
+   }
+   #rbot{
+      position: absolute;
+      left: 809px;
+      bottom: -144px
+   }
+   .slogan{
+      margin-bottom: 42px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+   }
+   .blue_button{
+      @include bluebutton(190px,68px );
+      margin-right: 20px;
+   }
+   .white_button{
+      @include whitebutton(159px,68px )
+   }
+   .dot{
+      width: 95px;
+      display: flex;
+      position: absolute;
+      left: 500px;
+      bottom: 30px;
+      div{
+         width: 10px;
+         height: 10px;
+         background: #C3D1E1;
+         border-radius: 50%;
+         margin: 0px 4px;
+      }
+   }
+   .dot>:nth-child(3){
+      background-color: #355DFB;;
+   }
+   .arrow{
+      display: flex;
+      position: absolute;
+      right: 0px;
+      top: 215px;
+      .arrow_left{
+         height: 40px;
+         width: 40px;
+         border-radius: 50%;
+         background: url(../../back_img/left.png) no-repeat 50% 50%;
+         background-color: white;
+      }
+      .arrow_right{
+         height: 40px;
+         width: 40px;
+         border-radius: 50%;
+         background: url(../../back_img/right.png) no-repeat 50% 50%;
+         background-color: white;
+      }
+   }
+}
+// plush
+main{
+   .plush{
+      display: flex;
+      justify-content: space-between;
+      @include font(500, 16px);
+      line-height: 140%;
+      margin: 116px 0px 111px;
+      section{
+         height: 70px;
+         padding:10px 0px 0px 70px;
+         position: relative;
+         background: url(../img/Frame.svg) no-repeat;
+      }
+      :nth-child(1)::before{
+         content: url(../img/CheckSquareOffset.svg);
+         position: absolute;
+         left: 0px;
+         top: 0px;
+      }
+      :nth-child(2)::before{
+         content: url(../img/ClockClockwise.svg);
+         position: absolute;
+         left: 0px;
+         top: 0px;
+      }
+      :nth-child(3)::before{
+         content: url(../img/Coin.svg);
+         position: absolute;
+         left: 0px;
+         top: 0px;
+      }
+      :nth-child(4)::before{
+         content: url(../img/LightningSlash.svg);
+         position: absolute;
+         left: 0px;
+         top: 0px;
+      }
+   }
+}
+// Широкий контейнер
+.container_z{
+   width: 1368px; 
+   margin: 0 auto;
+   position: absolute;
+   top: 927px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   // Рассчитайте ваши условия
+   .bg_condition{
+      height: 571px;
+      border-radius: 64px 6px;
+      background: #F0F4F8;
+      .container_condition{
+         width: 1245px;
+         height: 100%;
+         margin: 0px auto;
+         .condition_elements{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 90px;
+            .condition-left-element{
+               height: 378px;
+               width: 544px;
+               h6{
+                  @include font(300, 34px);
+               }
+               .left-elements{
+                  display: flex;
+                  justify-content: space-between;
+                  margin: 75px 0px 10px;
+                  :first-child{
+                     @include font(300, 16px);
+                  }
+                  :last-child{
+                     @include font(700, 18px);
+                  }
+               }
+               .line{
+                  height: 6px;
+                  border-radius: 8px;
+                  background: url(../img/tline.png) no-repeat;
+                  background-color: #CFDBE8;
+                  position: relative;
+                  img{
+                     position: absolute;
+                     left: 174px;
+                     bottom: -12px;
+                  }
+               }
+               .text_condition{
+                  @include font(300, 16px);
+                  margin: 46px 0px 15px;
+               }
+               form{
+                  display: flex;
+                  justify-content: space-between;
+                  label{
+                     @include label;
+                     [type]{
+                        height: 20px;
+                        width: 20px;
+                     }
+                  }
+                  label:hover{
+                     background-color: white;
+                     cursor: pointer;
+                     z-index: 3;
+                     opacity: 1;
+                     transition: 0.4s;
+                     @include font(500, 16px);
+                     color: black;
+                  }
+               }
+            }
+            .condition-right-element{
+               background: url(../img/bman.webp) no-repeat right bottom;
+               z-index: 3;
+               background-color: #fff;
+               border-radius: 10px 10px 120px 10px;
+               height: 378px;
+               width: 650px;
+               padding: 28px 234px 37px 35px;
+               .summa{
+                  display: flex;
+                  justify-content: space-between;
+                  .summablue{
+                     @include font(700, 36px);
+                     color: #355DFB;
+                  }
+                  .textblack{
+                     @include font(500, 14px);
+                     margin: 5px 0px 31px;
+                  }
+                  .sumred{
+                     color: red;
+                  }
+               }
+               .textsum{
+                  color: #6E9BB8;
+                  @include font(400, 12px);
+               }
+               .blue_button{
+                  @include bluebutton(232px, 68px);
+                  margin-top: 33px;
+               }
+               img{
+                  position: absolute;
+
+               }
+            }
+         }
+      }
+   }
+}
