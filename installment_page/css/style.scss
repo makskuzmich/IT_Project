@@ -4,9 +4,6 @@ $navcolor: #6E9BB8;
 *{
    box-sizing: border-box;
 }
-body{
-   height: 10000px;
-}
 // mixin
 @mixin bluebutton ($width:174px, $height:48px ){
    background: #0000DE;
@@ -364,6 +361,213 @@ main{
       }
    }
 }
+// Programs
+main{
+   #head_program{
+      @include font(300, 34px);
+      margin: 780px 0px 34px;
+   }
+   .programs{
+      display: flex;
+      justify-content: space-between;
+      .programs-element{
+         width: 405px;
+         height: 360px;
+         padding: 32px 0px 38px 40px;
+         border-radius: 10px;
+         background: url(../img/wash.webp) no-repeat right 20%;
+         background-color: #F0F4F8;
+         .head_text{
+            @include font(300, 14px);
+            color: #79A6C3;
+         }
+         h4{
+            @include font(700, 24px);
+            margin: 10px 0px 20px;
+         }
+         .programflex{
+            display: flex;
+            justify-content: space-between;
+            width: 207px;
+            .bluehead{
+               @include font(700, 32px);
+               color: #355DFB;
+               margin-bottom: 10px;
+            }
+            .blacktext{
+               @include font(300, 14px);
+            }
+         }
+         .bot_text{
+            @include font(300, 14px);
+            color: #6E9BB8;
+            line-height: 140%;
+            margin: 18px 0px 27px;
+         }
+         .blue_button{
+            @include bluebutton(130px, 48px);
+            margin-right: 10px;
+         }
+         .white_button{
+            @include whitebutton(133px, 48px);
+         }
+      }
+      .programs-element:nth-child(2){
+         background: url(../img/carr.webp) no-repeat right 20%;
+         background-color: #F0F4F8;
+      }
+      .programs-element:nth-child(3){
+         background: url(../img/guy.webp) no-repeat right bottom;
+         background-color: #F0F4F8;
+      }
+   }
+}
+// buy
+main{
+   #buyelem{
+      @include font(300, 34px);
+      margin: 94px 0px 35px;
+   }
+   .buy_container{
+      height: 346px;
+      display: flex;
+      justify-content: space-between;
+      .left-container, .right-container{
+         .step-one{
+            margin-bottom: 7px;
+            background: url(../img/step1.svg) no-repeat 90%;
+            background-color: #F0F4F8;
+         }
+         .step-three{
+            margin-top: 7px;
+            background: url(../img/step3.svg) no-repeat 90%;
+            background-color: #F0F4F8;
+         }
+         .step-two{
+            margin-bottom: 7px;
+            background: url(../img/step2.svg) no-repeat 90%;
+            background-color: #F0F4F8;
+         }
+         .step-four{
+            margin-top: 7px;
+            background: url(../img/step4.svg) no-repeat 90%;
+            background-color: #F0F4F8;
+         }
+         div{
+            width: 615px;
+            height: 166px;
+            border-radius: 10px;
+            padding: 26px 0px 26px 30px;
+         }
+         .buy-head{
+            @include font(300, 14px);
+            color: #79A6C3;
+         }
+         .buy-numb{
+            @include font(700, 22px);
+            margin: 10px 0px 15px;
+            a{
+               color: $maincolor;
+               text-decoration: underline;
+               line-height: 110%;
+            }
+         }
+         .buy-bot{
+            @include font(300, 14px);
+            color: #6E9BB8;
+            line-height: 140%;
+         }
+      }
+   }
+}
+// Отзывы клиентов
+main{
+   #reviews{
+      @include font(300, 34px);
+      margin: 112px 0px 93px;
+   }
+   .reviews_container{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
+      .reviews_a{
+         width: 405px;
+         height: 220px;
+         background: url(../../back_img/play.png) no-repeat 76% 50%,
+                     url(../../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../../back_img/man1.png) no-repeat;
+         z-index: 4;
+         .name{
+            margin: 242px 0px 10px;
+            @include font(700, 18px)
+         }
+         .name_atribut{
+            color: #6E9BB8;
+            @include font(400, 16px)
+         }
+      }
+      .w{
+         background: url(../../back_img/play.png) no-repeat 76% 50%,
+                     url(../../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../../back_img/women.png) no-repeat;
+      }
+      .m{
+         background: url(../../back_img/play.png) no-repeat 76% 50%,
+                     url(../../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../../back_img/man2.png) no-repeat;
+      }
+   }
+   .reviews_button{
+      width: 405px;
+      margin: 125px auto;
+      text-align: center;
+      .review_b{
+         position: relative;
+         z-index: 3;
+         @include whitebutton(405px, 48px );
+         span{
+            @include font(500, 14px);
+         }
+      }
+   }
+}
+// Полезно знать
+main{
+   #useful{
+      @include font(300, 34px);
+   }
+   .useful-elements{
+      margin: 29px 0px 37px;
+      span{
+         color: #6E9BB8;
+         @include font(500, 16px);
+         line-height: 120%;
+         margin-right: 28px;
+      }
+   }
+   .elemuseful{
+      h5{
+         @include font(700, 18px);
+         line-height: 140%;
+         margin-bottom: 10px;
+      }
+      section{
+         border-radius: 10px;
+         height: 44px;
+         margin-bottom: 6px;
+         background: url(../img/CheckCircle.svg) no-repeat 2% 50%;
+         background-color: #F0F4F8;
+         p{
+            @include font(300, 16px);
+            padding: 14px 60px;
+         }
+      }
+   }
+}
 // Широкий контейнер
 .container_z{
    width: 1368px; 
@@ -476,6 +680,116 @@ main{
 
                }
             }
+         }
+      }
+   }
+   // Отзывы фон
+   .bg_reviews{
+      width: 1368px;
+      height: 460px;
+      background: #F0F4F8;
+      border-radius: 120px 6px;
+      margin-top: 1235px;
+   }
+}
+// footer
+footer{
+   height: 669px;
+   background: #F0F4F8;
+   margin-top: 3100px;
+   .footer_container{
+      width: 1245px;
+      margin: 0 auto;
+      height: 100%;
+      .logo_form{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom:71px;
+         padding-top: 87px;
+         input{
+            height: 48px;
+            width: 891px;
+            padding-left: 57px;
+            background: url(../../back_img/MagnifyingGlass.png) no-repeat 1% 50%;
+            background-color: white;
+            border-radius: 6px;
+            border: none;
+         }
+      }
+      .footer_menu{
+         display: flex;
+         justify-content: space-between;
+         .contacts{
+            .number{
+               @include font(700, 37px);
+               color: $maincolor;
+               a:visited{
+                  color: $maincolor;
+                 }
+            }
+            .email{
+               @include font(400, 12px);
+               color: #6E9BB8;
+               margin: 8px 0px 45px;
+            }
+            .addres{
+               @include font(400, 18px);
+               color: $maincolor;
+            }
+            .icons{
+               font-size: 40px;
+               color: #3387be;
+              a{
+               i{
+                  margin: 0px 3px;
+               }
+              }
+              a{
+               i:hover{
+                  transform: scale(1.4);
+               }
+              }
+              a:visited{
+               color: #3387be;
+              }
+            }
+         }
+         .box{
+            h3{
+               @include font(400, 20px);
+               color: $maincolor;
+               margin-bottom: 14px;
+            }
+            ul{
+               margin-top: 55px;
+               li{
+                  @include font(400, 14px);
+                  margin-top: 20px;
+                  a:visited{
+                     color:black;
+                  }
+               }
+            }
+         }
+      }
+      .h{
+         margin: 62px 0px 11px;
+         @include font(700, 12px);
+         color: #6E9BB8;
+      }
+      .h_text{
+         @include font(400, 12px);
+         color: #6E9BB8;
+      }
+      .h_info{
+         margin: 60px 0px 16px;
+         @include font(400, 12px);
+         color: #6E9BB8;
+         span{
+            margin-right: 21px;
+         }
+         a:visited{
+            color: $navcolor;
          }
       }
    }

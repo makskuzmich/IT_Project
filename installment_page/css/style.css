@@ -1,7 +1,5 @@
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { height: 10000px; }
-
 @-webkit-keyframes fix { from { background: #5f5fa3; color: #07c9fa; }
   50% { background: #be1cdf; -webkit-columns: #f3ad2b; columns: #f3ad2b; }
   80% { background: #0000DE; color: #8484ac; }
@@ -79,6 +77,50 @@ main .plush :nth-child(2)::before { content: url(../img/ClockClockwise.svg); pos
 main .plush :nth-child(3)::before { content: url(../img/Coin.svg); position: absolute; left: 0px; top: 0px; }
 main .plush :nth-child(4)::before { content: url(../img/LightningSlash.svg); position: absolute; left: 0px; top: 0px; }
 
+main #head_program { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; margin: 780px 0px 34px; }
+main .programs { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+main .programs .programs-element { width: 405px; height: 360px; padding: 32px 0px 38px 40px; border-radius: 10px; background: url(../img/wash.webp) no-repeat right 20%; background-color: #F0F4F8; }
+main .programs .programs-element .head_text { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; color: #79A6C3; }
+main .programs .programs-element h4 { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 24px; margin: 10px 0px 20px; }
+main .programs .programs-element .programflex { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 207px; }
+main .programs .programs-element .programflex .bluehead { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 32px; color: #355DFB; margin-bottom: 10px; }
+main .programs .programs-element .programflex .blacktext { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; }
+main .programs .programs-element .bot_text { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; color: #6E9BB8; line-height: 140%; margin: 18px 0px 27px; }
+main .programs .programs-element .blue_button { background: #0000DE; border-radius: 20px 0px; width: 130px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; margin-right: 10px; }
+main .programs .programs-element .white_button { background: #FFFFFF; border-radius: 20px 0px; width: 133px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
+main .programs .programs-element:nth-child(2) { background: url(../img/carr.webp) no-repeat right 20%; background-color: #F0F4F8; }
+main .programs .programs-element:nth-child(3) { background: url(../img/guy.webp) no-repeat right bottom; background-color: #F0F4F8; }
+
+main #buyelem { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; margin: 94px 0px 35px; }
+main .buy_container { height: 346px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+main .buy_container .left-container .step-one, main .buy_container .right-container .step-one { margin-bottom: 7px; background: url(../img/step1.svg) no-repeat 90%; background-color: #F0F4F8; }
+main .buy_container .left-container .step-three, main .buy_container .right-container .step-three { margin-top: 7px; background: url(../img/step3.svg) no-repeat 90%; background-color: #F0F4F8; }
+main .buy_container .left-container .step-two, main .buy_container .right-container .step-two { margin-bottom: 7px; background: url(../img/step2.svg) no-repeat 90%; background-color: #F0F4F8; }
+main .buy_container .left-container .step-four, main .buy_container .right-container .step-four { margin-top: 7px; background: url(../img/step4.svg) no-repeat 90%; background-color: #F0F4F8; }
+main .buy_container .left-container div, main .buy_container .right-container div { width: 615px; height: 166px; border-radius: 10px; padding: 26px 0px 26px 30px; }
+main .buy_container .left-container .buy-head, main .buy_container .right-container .buy-head { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; color: #79A6C3; }
+main .buy_container .left-container .buy-numb, main .buy_container .right-container .buy-numb { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 22px; margin: 10px 0px 15px; }
+main .buy_container .left-container .buy-numb a, main .buy_container .right-container .buy-numb a { color: #0000DE; text-decoration: underline; line-height: 110%; }
+main .buy_container .left-container .buy-bot, main .buy_container .right-container .buy-bot { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; color: #6E9BB8; line-height: 140%; }
+
+main #reviews { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; margin: 112px 0px 93px; }
+main .reviews_container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; position: relative; z-index: 2; }
+main .reviews_container .reviews_a { width: 405px; height: 220px; background: url(../../back_img/play.png) no-repeat 76% 50%, url(../../back_img/rew2.png) no-repeat 92% 190%, url(../../back_img/rew1.png) no-repeat 80% 50%, url(../../back_img/man1.png) no-repeat; z-index: 4; }
+main .reviews_container .reviews_a .name { margin: 242px 0px 10px; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 18px; }
+main .reviews_container .reviews_a .name_atribut { color: #6E9BB8; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 16px; }
+main .reviews_container .w { background: url(../../back_img/play.png) no-repeat 76% 50%, url(../../back_img/rew2.png) no-repeat 92% 190%, url(../../back_img/rew1.png) no-repeat 80% 50%, url(../../back_img/women.png) no-repeat; }
+main .reviews_container .m { background: url(../../back_img/play.png) no-repeat 76% 50%, url(../../back_img/rew2.png) no-repeat 92% 190%, url(../../back_img/rew1.png) no-repeat 80% 50%, url(../../back_img/man2.png) no-repeat; }
+main .reviews_button { width: 405px; margin: 125px auto; text-align: center; }
+main .reviews_button .review_b { position: relative; z-index: 3; background: #FFFFFF; border-radius: 20px 0px; width: 405px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; }
+main .reviews_button .review_b span { font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; }
+
+main #useful { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 34px; }
+main .useful-elements { margin: 29px 0px 37px; }
+main .useful-elements span { color: #6E9BB8; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 120%; margin-right: 28px; }
+main .elemuseful h5 { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 18px; line-height: 140%; margin-bottom: 10px; }
+main .elemuseful section { border-radius: 10px; height: 44px; margin-bottom: 6px; background: url(../img/CheckCircle.svg) no-repeat 2% 50%; background-color: #F0F4F8; }
+main .elemuseful section p { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 16px; padding: 14px 60px; }
+
 .container_z { width: 1368px; margin: 0 auto; position: absolute; top: 927px; bottom: 0; left: 0; right: 0; }
 .container_z .bg_condition { height: 571px; border-radius: 64px 6px; background: #F0F4F8; }
 .container_z .bg_condition .container_condition { width: 1245px; height: 100%; margin: 0px auto; }
@@ -104,5 +146,29 @@ main .plush :nth-child(4)::before { content: url(../img/LightningSlash.svg); pos
 .container_z .bg_condition .container_condition .condition_elements .condition-right-element .textsum { color: #6E9BB8; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; }
 .container_z .bg_condition .container_condition .condition_elements .condition-right-element .blue_button { background: #0000DE; border-radius: 20px 0px; width: 232px; height: 68px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; margin-top: 33px; }
 .container_z .bg_condition .container_condition .condition_elements .condition-right-element img { position: absolute; }
+.container_z .bg_reviews { width: 1368px; height: 460px; background: #F0F4F8; border-radius: 120px 6px; margin-top: 1235px; }
+
+footer { height: 669px; background: #F0F4F8; margin-top: 3100px; }
+footer .footer_container { width: 1245px; margin: 0 auto; height: 100%; }
+footer .footer_container .logo_form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 71px; padding-top: 87px; }
+footer .footer_container .logo_form input { height: 48px; width: 891px; padding-left: 57px; background: url(../../back_img/MagnifyingGlass.png) no-repeat 1% 50%; background-color: white; border-radius: 6px; border: none; }
+footer .footer_container .footer_menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+footer .footer_container .footer_menu .contacts .number { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 37px; color: #0000DE; }
+footer .footer_container .footer_menu .contacts .number a:visited { color: #0000DE; }
+footer .footer_container .footer_menu .contacts .email { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #6E9BB8; margin: 8px 0px 45px; }
+footer .footer_container .footer_menu .contacts .addres { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 18px; color: #0000DE; }
+footer .footer_container .footer_menu .contacts .icons { font-size: 40px; color: #3387be; }
+footer .footer_container .footer_menu .contacts .icons a i { margin: 0px 3px; }
+footer .footer_container .footer_menu .contacts .icons a i:hover { -webkit-transform: scale(1.4); transform: scale(1.4); }
+footer .footer_container .footer_menu .contacts .icons a:visited { color: #3387be; }
+footer .footer_container .footer_menu .box h3 { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 20px; color: #0000DE; margin-bottom: 14px; }
+footer .footer_container .footer_menu .box ul { margin-top: 55px; }
+footer .footer_container .footer_menu .box ul li { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 14px; margin-top: 20px; }
+footer .footer_container .footer_menu .box ul li a:visited { color: black; }
+footer .footer_container .h { margin: 62px 0px 11px; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 12px; color: #6E9BB8; }
+footer .footer_container .h_text { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #6E9BB8; }
+footer .footer_container .h_info { margin: 60px 0px 16px; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #6E9BB8; }
+footer .footer_container .h_info span { margin-right: 21px; }
+footer .footer_container .h_info a:visited { color: #6E9BB8; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,14 @@
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+@-webkit-keyframes fix { from { background: #5f5fa3; color: #07c9fa; }
+  50% { background: #be1cdf; -webkit-columns: #f3ad2b; columns: #f3ad2b; }
+  80% { background: #0000DE; color: #8484ac; }
+  to { background: #8f8fdd; color: #1414e6; } }
+
+@keyframes fix { from { background: #5f5fa3; color: #07c9fa; }
+  50% { background: #be1cdf; -webkit-columns: #f3ad2b; columns: #f3ad2b; }
+  80% { background: #0000DE; color: #8484ac; }
+  to { background: #8f8fdd; color: #1414e6; } }
 a { text-decoration: none; }
 
 a:visited { text-decoration: none; }
@@ -7,6 +16,9 @@ a:visited { text-decoration: none; }
 button:hover { cursor: pointer; }
 
 .block { width: 1920px; height: 630px; background: #F0F4F8; position: relative; }
+
+.fixed { position: fixed; bottom: 10px; left: 10px; width: 80px; height: 80px; border-radius: 50%; background-color: #0000DE; -webkit-animation: fix 4s infinite; animation: fix 4s infinite; }
+.fixed span { position: relative; top: 30px; left: 10px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; color: #FFFFFF; }
 
 .container { width: 1245px; position: absolute; margin: 0 auto; top: 0; left: 0; right: 0; }
 
