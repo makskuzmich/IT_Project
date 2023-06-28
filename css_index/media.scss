@@ -1,0 +1,469 @@
+@mixin font($fweight:300, $fsize:20px){
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: $fweight;
+   font-size: $fsize;
+}
+@mixin bluebutton ($width:174px, $height:48px ){
+   background: #0000DE;
+   border-radius: 20px 0px;
+   width:$width;
+   height: $height;
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   color: white;
+   border: none;
+  
+}
+@mixin whitebutton ($width:174px, $height:48px ){
+   background: #FFFFFF;
+   border-radius: 20px 0px;
+   width: $width;
+   height:$height;
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   color: #0000DE;
+   border: none;
+}
+@mixin label ($widthl:224px, $height:49px, $border:1px solid #C6D9E9, $opacity:0.5,$color: #6E9BB8){
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width: $widthl;
+   height: $height;
+   border: $border;
+   border-radius: 20px 0px;
+   text-align:center;
+   opacity:$opacity;
+   color: $color;
+   span{
+      margin-left: 10px;
+      @include font(500, 16px);
+   }
+}
+@media all and (max-width:500px) {
+   // Старое скрываем
+   .fixed{
+      display: none;
+   }
+   .block{
+      display: none;
+   }
+   .container{
+      display: none;
+   }
+   .container_z{
+      display: none;
+   }
+   .footer_bg{
+      display: none;
+   }
+
+   // Адаптив включаем
+   .adaptiv_block{
+      height: 690px;
+      background: url(../img_adaptiv/man_adaptiv.webp) no-repeat 50% 100%,
+                  url(../img_adaptiv/17.webp) no-repeat 50% 90%,
+                  url(../img_adaptiv/elipse.webp) no-repeat 50% 75%;
+      background-color: #F0F4F8;
+      display: block;
+      min-width: 350px;
+   }
+      .adaptiv_version{
+         width: 339px;
+         margin: 0 auto;
+         display: block;
+         .adaptiv_header{
+           .adaptiv_menu{
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               div{
+                  margin: 10px 0px;
+                  i{
+                     font-size: 20px;
+                  }
+               }
+               .button_blue{
+                  @include bluebutton(127px, 31px);
+                  padding: 7px 14px;                  
+                  span{
+                     @include font(500, 12px);
+                     color: white;
+                  }
+               }
+           }
+           .adaptiv_nav{
+            display: flex;
+            justify-content: space-between;
+               a{
+                  @include font(300, 16px);
+                  color: #0000DE;
+                  line-height: 110%;
+               }
+            }
+            h1{
+               @include font(700, 32px);
+               line-height: 110%;
+               margin-top: 31px;
+               span{
+                  color: #0000DE;
+               }
+            }
+            p{
+               @include font(300, 14px);
+               line-height: 130%;
+               margin-bottom: 21px;
+            }
+            .blue_button{
+               @include bluebutton(155px, 43px);
+               margin-right: 5px;
+            }
+            .white_button{
+               @include whitebutton(126px, 43px);
+            }
+      }
+   }
+
+   .adaptiv-head{
+      @include font(300, 28px);
+      line-height: 110%;
+   }
+   // reccomend
+   .reccomend{
+      h4{
+         margin: 65px 0px 21px;
+      }
+      .reccomend-item{
+         height: 301px;
+         border-radius: 10px;
+         background: url(../img_adaptiv/first.webp) no-repeat right bottom;
+         background-color: #F0F4F8;
+         padding: 26px 41px 32px 33.5px;
+         margin-bottom: 16.7px;
+         .first-text{
+            @include font(300, 14px);
+            color: #79A6C3;
+            line-height: 110%;
+         }
+         h5{
+            @include font(700, 20px);
+            line-height: 110%;
+            margin: 8px 0px 16px;
+         }
+         .reccomend-elemets{
+            display: flex;
+            justify-content: space-between;
+            width: 207px;
+            .top-elem{
+               @include font(700, 24px);
+               color: #355DFB;
+               line-height: 110%;
+            }
+            .bot-elem{
+               @include font(300, 12px);
+               line-height: 110%;
+               margin-top: 5px;
+            }
+         }
+         .s-text{
+            @include font(300, 12px);
+            color: #6E9BB8;
+            line-height: 140%;
+            margin: 15px 0px 22px;
+         }
+         .blue_button{
+            @include bluebutton(138px, 40px);
+            color: #fff;
+            margin-right: 10px;
+         }
+         .white_button{
+            @include whitebutton(111px, 40px);
+         }
+      }
+      .avto{
+         background: url(../img_adaptiv/sec.webp) no-repeat right 20%;
+         background-color: #F0F4F8;
+      }
+      .aktivniy{
+         background: url(../img_adaptiv/three.webp) no-repeat right bottom;
+         background-color: #F0F4F8;
+      }
+      .express{
+         background: url(../img_adaptiv/four.webp) no-repeat right 20%;
+         background-color: #F0F4F8;
+      }
+   }
+   .buttons{
+      margin-top: 86px;
+      position: relative;
+      z-index: 2;
+      .buttons_div_dohod{
+         height: 90px;
+         margin-bottom: 17px;
+         border-radius: 10px;
+         .butt-text{
+            padding: 17px 0px 17px 84px ;
+            @include font(300, 16px);
+            color: #fff;
+         }
+      }
+      .botb{
+         background: url(../img_adaptiv/Target.svg) no-repeat 7% 50%;
+         background-color: #0000DE;
+      }
+      .topb{
+         background: url(../img_adaptiv/CaretDoubleRight.svg) no-repeat 7% 50%;
+         background-color: #0000DE;
+      }
+   }
+   .dohod{
+      margin: -55px 0px 80px;
+      height: 790px;
+      border-radius: 29px;
+      background: #F0F4F8;
+      position: relative;
+      z-index: 1;
+      min-width: 350px;
+      display: block;
+      h4{
+         padding-top: 114px;
+      }
+      .adaptiv-calc{
+         .adaptiv_calc_items{
+            display: flex;
+            justify-content: space-between;
+            margin: 31px 0px 20px;
+            .adaptiv_right_text{
+               @include font(700, 16px);
+            }
+         }
+         .adaptiv_left_text{
+            @include font(300, 16px);
+         }
+         .mtext{
+            margin: 0px 0px 10px;
+         }
+         form{
+            display: flex;
+            justify-content: space-between;
+            label{
+               @include label;
+               [type]{
+                  height: 20px;
+                  width: 20px;
+               }
+            }
+            label:hover{
+               background-color: white;
+               cursor: pointer;
+               z-index: 3;
+               opacity: 1;
+               transition: 0.4s;
+               @include font(500, 16px);
+               color: black;
+            }
+         }
+         .calc_items{
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0px 10px;
+         }
+         .bg{
+            height: 6px;
+            width: 100%;
+            background: url(../calc_img/blue.png) no-repeat ,
+                        url(../calc_img/clean.png) no-repeat ;
+            position: relative;
+            margin-bottom: 34px;
+            img{
+               position: absolute;
+               left: 180px;
+               top: -11px;
+            }       
+         }
+         .back{
+            background: url(../calc_img/blue2.png) no-repeat ,
+                        url(../calc_img/clean.png) no-repeat ;
+            img{
+               left: 285px;
+            }
+         }
+      }
+      .adapt{
+         height: 226px;
+         border-radius: 10px;
+         background: #FFF;
+         padding: 13px 18px 18px;
+         .adapt-items{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 70px;
+            div{
+               :first-child{
+                  @include font(700, 28px);
+                  color: #355DFB;
+               }
+               :last-child{
+                  @include font(300, 12px);
+               }
+            }
+         }
+         .adapt-i{
+            margin-top: 30px;
+            :first-child{
+               @include font(700, 28px);
+               color: #355DFB;
+            }
+            :last-child{
+               @include font(300, 12px);
+            }
+         }
+         .blue_button{
+            @include bluebutton(303px, 48px);
+            margin-top: 30px;
+         }
+      }
+   }
+   .vozmozhnosti{
+      p{
+         @include font(300, 18px);
+         line-height: 120%;
+         margin: 27px 0px
+      }
+      .v_elem{
+         @include font(500, 16px);
+         line-height: 140%;
+         padding-left: 80px;
+         background: url(../posibilities_img/Coin.png) no-repeat 0% 50%;
+         margin-bottom: 38px;
+      }
+      .ba{
+         background: url(../posibilities_img/Wallet.png) no-repeat 0% 50%;
+      }
+      .bb{
+         background: url(../posibilities_img/ChartBar.png) no-repeat 0% 50%;
+      }
+      .bc{
+         background: url(../posibilities_img/ShieldChevron.png) no-repeat 0% 40%;
+         height: 50px;
+         margin-bottom: 0px;
+      }
+      button{
+         @include bluebutton(339px, 48px);
+      }
+   }
+   // отзывы
+   .mhead{
+      margin: 64px 0px 18px;
+   }
+   .reviews_container-adapt{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      overflow-x: scroll;
+      height: 320px;
+      margin-right: -100px;
+      .reviews_a{
+         width: 405px;
+         height: 202px;
+         background: url(../back_img/play.png) no-repeat 76% 50%,
+                     url(../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../back_img/man1.png) no-repeat;
+         z-index: 4;
+         .name{
+            margin: 242px 0px 10px;
+            @include font(700, 18px)
+         }
+         .name_atribut{
+            color: #6E9BB8;
+            @include font(400, 16px)
+         }
+      }
+      .w{
+         background: url(../back_img/play.png) no-repeat 76% 50%,
+                     url(../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../back_img/women.png) no-repeat;
+      }
+      .m{
+         background: url(../back_img/play.png) no-repeat 76% 50%,
+                     url(../back_img/rew2.png) no-repeat 92% 190%,
+                     url(../back_img/rew1.png) no-repeat 80% 50%,
+                     url(../back_img/man2.png) no-repeat;
+      }
+   }
+   .adaptiv_version{
+      .reviews_button{
+         margin: 20px auto;
+         text-align: center;
+         .review_b{
+            @include whitebutton(339px, 48px );
+            border-radius: 20px 0px;
+            background: #F0F4F8;
+            span{
+               @include font(500, 14px);
+               color: #0000DE;
+            }
+         }
+      }
+   }
+   .footer-adapt{
+      min-width: 350px;
+      background: #F0F4F8;
+      height: 310px;
+      display: block;
+      form{
+         padding: 21px 0px 30px;
+         [placeholder]{
+            @include font(300, 14px);
+            color: #79A6C3;
+         }
+         input{
+            width: 100%;
+            height: 48px;
+            border-radius: 6px;
+            padding-left: 40px;
+            background: url(../back_img/MagnifyingGlass.png) no-repeat 3% 50%;
+         }
+      }
+      .tel{
+         @include font(700, 37px);
+         color: #0000DE;
+         margin-bottom: 10px;
+      }
+      .mail{
+         @include font(300, 12px);
+         color: #6E9BB8;
+      }
+      .adress{
+         @include font(400, 18px);
+         color: #0000DE;
+         margin: 27px 0px 10px;
+      }
+      .icons{
+         font-size: 40px;
+         color: #3387be;
+         margin-top: 20px;
+      a{
+         i{
+            margin: 0px 3px;
+         }
+      }
+      a{
+         i:hover{
+            transform: scale(1.4);
+         }
+      }
+      a:visited{
+         color: #3387be;
+      }
+      }
+   }
+}
