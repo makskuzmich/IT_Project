@@ -68,11 +68,11 @@
   .vozmozhnosti button { background: #0000DE; border-radius: 20px 0px; width: 339px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; }
   .mhead { margin: 64px 0px 18px; }
   .reviews_container-adapt { display: -webkit-box; display: -ms-flexbox; -webkit-box-pack: justify; -ms-flex-pack: justify; overflow-x: scroll; height: 320px; margin-right: -100px; }
-  .reviews_container-adapt .reviews_a { width: 405px; height: 202px; background: url(../back_img/play.png) no-repeat 76% 50%, url(../back_img/rew2.png) no-repeat 92% 190%, url(../back_img/rew1.png) no-repeat 80% 50%, url(../back_img/man1.png) no-repeat; z-index: 4; }
+  .reviews_container-adapt .reviews_a { width: 405px; height: 202px; background: url(../back_img/play.png) no-repeat 76% 50%, url(../back_img/rew2.png) no-repeat 92% 190%, url(../back_img/rew1.png) no-repeat 80% 50%, url(../back_img/man1.webp) no-repeat; z-index: 4; }
   .reviews_container-adapt .reviews_a .name { margin: 242px 0px 10px; font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 18px; }
   .reviews_container-adapt .reviews_a .name_atribut { color: #6E9BB8; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 16px; }
-  .reviews_container-adapt .w { background: url(../back_img/play.png) no-repeat 76% 50%, url(../back_img/rew2.png) no-repeat 92% 190%, url(../back_img/rew1.png) no-repeat 80% 50%, url(../back_img/women.png) no-repeat; }
-  .reviews_container-adapt .m { background: url(../back_img/play.png) no-repeat 76% 50%, url(../back_img/rew2.png) no-repeat 92% 190%, url(../back_img/rew1.png) no-repeat 80% 50%, url(../back_img/man2.png) no-repeat; }
+  .reviews_container-adapt .w { background: url(../back_img/play.png) no-repeat 76% 50%, url(../back_img/rew2.png) no-repeat 92% 190%, url(../back_img/rew1.png) no-repeat 80% 50%, url(../back_img/women.webp) no-repeat; }
+  .reviews_container-adapt .m { background: url(../back_img/play.png) no-repeat 76% 50%, url(../back_img/rew2.png) no-repeat 92% 190%, url(../back_img/rew1.png) no-repeat 80% 50%, url(../back_img/man2.webp) no-repeat; }
   .adaptiv_version .reviews_button { margin: 20px auto; text-align: center; }
   .adaptiv_version .reviews_button .review_b { background: #FFFFFF; border-radius: 20px 0px; width: 339px; height: 48px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; border: none; border-radius: 20px 0px; background: #F0F4F8; }
   .adaptiv_version .reviews_button .review_b span { font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: #0000DE; }
