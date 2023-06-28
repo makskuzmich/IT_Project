@@ -15,7 +15,7 @@ a:visited { text-decoration: none; }
 
 button:hover { cursor: pointer; }
 
-.block { width: 1920px; height: 630px; background: #F0F4F8; position: relative; }
+.block { height: 630px; background: #F0F4F8; position: relative; }
 
 .fixed { position: fixed; bottom: 10px; left: 10px; width: 80px; height: 80px; border-radius: 50%; background-color: #0000DE; -webkit-animation: fix 4s infinite; animation: fix 4s infinite; }
 .fixed span { position: relative; top: 30px; left: 10px; font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 14px; color: #FFFFFF; }
@@ -198,5 +198,4 @@ footer .footer_container .h_text { font-family: 'Ubuntu'; font-style: normal; fo
 footer .footer_container .h_info { margin: 60px 0px 16px; font-family: 'Ubuntu'; font-style: normal; font-weight: 400; font-size: 12px; color: #6E9BB8; }
 footer .footer_container .h_info span { margin-right: 21px; }
 footer .footer_container .h_info a:visited { color: #6E9BB8; }
-
 /*# sourceMappingURL=stylse.css.map */
