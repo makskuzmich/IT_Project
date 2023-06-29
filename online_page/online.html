@@ -16,7 +16,7 @@
 <body>
    
    <div class="block" id="start">
-      <div class="fixed">
+      <div class="fixed" id="fix">
          <a href="#start"><span>В начало</span></a>
       </div>
    </div>
@@ -245,7 +245,17 @@
       </div>
    </footer>
 
+   <script>
+      var fix = document.getElementById('fix');
 
+      window.onscroll = function(event){
+          if(this.pageYOffset > 10){
+              fix.style.display = 'block';
+          } else{
+              fix.style.display = 'none'; 
+          }
+      }
+  </script>
 
 </body>
 </html>

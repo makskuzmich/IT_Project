@@ -97,6 +97,27 @@
                   }
                }
            }
+           .adaptiv_nav_burger{
+               width: 100vw;
+               height: 100vh;
+               background-color: #0000DE;
+               position: absolute;
+               top: -110%;
+               transition: 2s;
+               ul{
+                  li{
+                     @include font(700, 18px);
+                     color: #fff;
+                     padding: 20px;
+                  }
+               }
+           }
+           
+            .active{
+               transition: 2s;
+               top: 10%;
+            }
+           
            .adaptiv_nav{
             display: flex;
             justify-content: space-between;
@@ -128,6 +149,9 @@
             }
       }
    }
+   
+   
+   
 
    .adaptiv-head{
       @include font(300, 28px);

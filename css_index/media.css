@@ -10,6 +10,9 @@
   .adaptiv_version .adaptiv_header .adaptiv_menu div i { font-size: 20px; }
   .adaptiv_version .adaptiv_header .adaptiv_menu .button_blue { background: #0000DE; border-radius: 20px 0px; width: 127px; height: 31px; font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 14px; color: white; border: none; padding: 7px 14px; }
   .adaptiv_version .adaptiv_header .adaptiv_menu .button_blue span { font-family: 'Ubuntu'; font-style: normal; font-weight: 500; font-size: 12px; color: white; }
+  .adaptiv_version .adaptiv_header .adaptiv_nav_burger { width: 100vw; height: 100vh; background-color: #0000DE; position: absolute; top: -110%; -webkit-transition: 2s; transition: 2s; }
+  .adaptiv_version .adaptiv_header .adaptiv_nav_burger ul li { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 18px; color: #fff; padding: 20px; }
+  .adaptiv_version .adaptiv_header .active { -webkit-transition: 2s; transition: 2s; top: 10%; }
   .adaptiv_version .adaptiv_header .adaptiv_nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
   .adaptiv_version .adaptiv_header .adaptiv_nav a { font-family: 'Ubuntu'; font-style: normal; font-weight: 300; font-size: 16px; color: #0000DE; line-height: 110%; }
   .adaptiv_version .adaptiv_header h1 { font-family: 'Ubuntu'; font-style: normal; font-weight: 700; font-size: 32px; line-height: 110%; margin-top: 31px; }

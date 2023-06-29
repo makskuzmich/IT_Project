@@ -13,10 +13,15 @@
    <link rel="stylesheet" type="text/css" href="css_index/media.css">
    <link rel="shortcut icon" href="back_img/title_top.png" type="image/png">
    <title>НурФинанс &mdash; инвестиции</title>
+   <style>
+      html{
+         width: 100%;
+      }
+   </style>
 </head>
 <body>
    <div class="block" id="start">
-      <div class="fixed">
+      <div class="fixed" id="fix">
          <a href="#start"><span>В начало</span></a>
       </div>
    </div>
@@ -499,11 +504,22 @@
    <div class="adaptiv_block">
          <div class="adaptiv_version">
             <div class="adaptiv_header">
+               
                <div class="adaptiv_menu">
-                  <div class="fdiv"><span><i class="fa-solid fa-bars"></i></span></div>
+                  <div class="fdiv"><span><a href="#"><i class="fa-solid fa-bars"></i></a></span></div>
                   <div><span><img src="img_adaptiv/head.webp" alt="НурФинанс"></span></div>
                   <div class="button_blue"><a href="index.html"><span>Личный кабинет</span></a></div>
                </div>
+               <nav class="adaptiv_nav_burger">
+                  <ul>
+                     <li>Главная</li>
+                     <li>О нас</li>
+                     <li>Контакты</li>
+                     <li>Вклады</li>
+                     <li>Инвестиции</li>
+                  </ul>
+               </nav>
+
                <hr>
                <div class="adaptiv_nav">
                   <div><a href="invest_page/invest.html">Инвестиции</a></div>
@@ -710,6 +726,23 @@
            </p>
       </div>
    </div>
-      
+
+   <script
+        src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+        crossorigin="anonymous"></script>
+   <script src="js/app.js"></script>
+   <script>
+      var fix = document.getElementById('fix');
+
+      window.onscroll = function(event){
+          if(this.pageYOffset > 10){
+              fix.style.display = 'block';
+          } else{
+              fix.style.display = 'none'; 
+          }
+      }
+  </script>
+
 </body>
 </html>
