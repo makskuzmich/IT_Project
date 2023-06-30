@@ -3,3 +3,4 @@ $(document).ready(function() {
       $('.fdiv,.adaptiv_nav_burger').toggleClass('active');
    });
 });
+
